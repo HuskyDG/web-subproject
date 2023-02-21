@@ -1,0 +1,96 @@
+<html>
+<head>
+    <style>
+
+        .aa {
+            display: block;
+            width: 500px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            padding: 8px;
+        }
+
+        .ab {
+            display: block;
+            width: 600px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            padding: 8px;
+        }
+
+            .ab h2 {
+                padding: 4px 0;
+            }
+
+            .ab p {
+                padding-top: 4px;
+            }
+
+        .ab__after {
+            position: relative;
+        }
+
+            .ab__after::after {
+                position: absolute;
+                display: block;
+                content: "";
+                border-right: 2px solid #988d8d;
+                height: 21px;
+                right: 0;
+                top: -2px;
+            }
+
+        .ab > a {
+            padding-left: 4px;
+            padding-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="aa mg-bt-16">
+        <details open>
+            <summary>IUH</summary>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ducimus laudantium voluptatum facilis inventore nihil possimus cumque commodi iusto aliquam cum officiis vel maiores, omnis ipsam alias quibusdam molestias ut!</p>
+        </details>
+
+        <details open>
+            <summary>FIT-IUH</summary>
+        </details>
+    </div>
+
+    <div class="ab mg-bt-16">
+        <img src="/images/drum.jfif" alt="drum">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim quibusdam non provident! Eius fugiat ullam necessitatibus rerum, dolores deserunt nihil officia, culpa assumenda quibusdam, doloribus eum aliquid quos sint.</p>
+        <h2>Projects</h2>
+        <ul class="ab__ul">
+            <li>
+                Featured
+                <ul class="ab__first-ul">
+                    <li>
+                        <a href="#">School of Webcraft</a>
+                    </li>
+                    <li>
+                        <a href="https://crisiscommons.org/">Crisis Commons</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Latest
+                <ul class="ab__second-ul">
+                    <li>
+                        <a href="https://www.linux-magazine.com/Issues/2021/242/Create-appealing-presentations-with-Inkscape-and-JessyInk">JessyInk</a>
+                    </li>
+                    <li>
+                        <a href="https://privacycamp.eu/">PrivacyCamp</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <a class="ab__after" href="http://www.twitter.com/" title="Social Network">Twitter</a>
+        <a class="ab__after" href="http://www.facebook.com/" title="Social Network">Facebook</a>
+        <a href="http://www.flickr.com/" title="Social Network">Flickr</a>
+
+    </div>
+</body>
+</html>
