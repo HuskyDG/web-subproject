@@ -1,0 +1,103 @@
+<html>
+
+<body>
+    <div style="padding: 10px;">
+        <form>
+            <fieldset>
+                <legend>Your message:</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <lable for="emailto">To</lable>
+                        </td>
+                        <td><input type="text" name="txtto" readonly="readonly" id="emailto" size="20" value="Example here" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="emailfrom">Your email</lable>
+                        </td>
+                        <td><input type="text" name="txtfrom" size="20" id="emailfrom" size="20" tabindex="1" maxlength="250" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="emailbody">Message</lable>
+                        </td>
+                        <td><textarea name="txtbody" id="emailbody" cols="50" rows="10" tabindex="2"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>How yo found us</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <lable for="d">How did you find us?</lable>
+
+                        </td>
+                        <td>
+                            <select id="d">
+                        <option>Google</option>
+                    </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="dd">Newsletter</lable>
+
+                        </td>
+                        <td>
+                            <input type="radio" id="dd" /> Ensure this box is checked if you would like to receive email update
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div style="padding: 10px;">
+        <fieldset>
+            <legend>
+                <i>Contact information</i>
+            </legend>
+            <label for="xxx"></label>
+            <table>
+                <tr>
+                    <td>
+                        <lable for="fn">First name</lable>
+                    </td>
+                    <td><input type="text" name="fn" id="fn" size="20" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable for="ln">Last name</lable>
+                    </td>
+                    <td><input type="text" name="ln" id="ln" size="20" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable for="em">Email</lable>
+                    </td>
+                    <td><input type="email" name="em" id="em" size="20" /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Complete question</legend>
+            <p>How tail is the Eiffel tower in france</p>
+            <input name="w" type="radio" value="1"> 584 ft<br/>
+            <input name="w" type="radio" value="2"> 784 ft<br/>
+            <input name="w" type="radio" value="3"> 984 ft<br/>
+            <input name="w" type="radio" value="4"> 1184 ft<br/>
+        </fieldset>
+        <fieldset>
+            <legend>Tiebreaker question </legend>
+            <p>In 25 words or less, say why you would like to win $10000:</p>
+            <textarea cols="30"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Enter competion</legend>
+            <input type="submit" value="Enter competion" />
+        </fieldset>
+    </div>
+</body>
+
+</html>
