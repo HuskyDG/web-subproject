@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+         * {
+            box-sizing: border-box;
+        }
+
+        .b18 {
+            margin: auto;
+            width: 250px;
+            height: 80px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+            margin-top: 48px;
+            margin-bottom: 48px;          
+        }
+
+        form {
+            margin: 8px;
+            padding-top: 4px;
+        }
+     </style>
+</head>
+<body>
+    <div class="b18">
+        <form action="" method="get" name="frmInfo">
+            Please indicate your area ot interest: <br>
+            <input type="text" name="txtName" value="" size="20" maxlength="20" list="tech">
+            <datalist id="tech">
+                <option value="CSS"></option>
+                <option value="HTML"></option>
+                <option value="JavaScrip"></option>
+            </datalist>
+        </form>
+
+    </div>
+</body>
+</html>
