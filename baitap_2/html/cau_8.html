@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 500px;
+            margin-left: 30px;
+            margin: auto;
+        }
+
+        .cau8a {
+            margin: 8px;
+            padding-bottom: 8px;
+        }
+
+        .solic, .blue, .red {
+            display: inline-block;
+            margin: 4px;
+        }
+
+        .solic {
+            color: rgb(119, 114, 114);
+            font-weight: 600;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .border  {
+            border-top: 10px solid #85C226;
+            border-right: 10px solid #F7C200;
+            border-bottom: 10px solid #4493A0;
+            border-left: 10px solid #DF127B;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 500px;
+            margin-left: 30px;
+            margin: auto;
+        }
+
+        .cau8b {
+            margin: 8px;
+            padding-bottom: 8px;
+        }
+
+        .solid, .blue, .red {
+            display: inline-block;
+            margin: 2px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .solid, p {
+            color: rgb(119, 114, 114);
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .border  {
+            border-top: 10px solid #85C226;
+            border-right: 10px dotted #F7C200;
+            border-bottom: 10px groove #4493A0;
+            border-left: 10px double #DF127B;
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .important {
+            color: #fff;
+            background-color: red;
+            display: inline-block;
+            padding: 0 8px;
+            font-weight: 600;
+        }
+
+        h2 {
+            display: inline;
+            padding-right: 10px;
+        }
+
+        ._axcau8c {
+            margin: 8px;
+            padding-bottom: 8px;
+        }
+
+        ._axsolic, ._axblue, ._axred {
+            display: inline-block;
+            margin: 4px;
+        }
+
+        ._axsolic {
+            color: rgb(119, 114, 114);
+            font-weight: 600;
+        }
+
+        ._axblue {
+            color: blue;
+        }
+
+        ._axred {
+            color: red;
+        }
+
+        ._axborder  {
+            border-top: 5px solid #85C226;
+            border-right: 10px solid #F7C200;
+            border-bottom: 15px solid #4493A0;
+            border-left: 20px solid #DF127B;
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cau8a">
+        <h2 style="color: rgb(81, 79, 79);"><b>Border Color</b></h2>
+        <div id="color">
+            <p class="solic">Sytax: </p>
+            <p class="blue">border-color: </p>
+            <p class="red">(top) (right) (bottom) (left);</p>
+        </div>
+
+        <div id="color">
+            <p class="solic">Example: </p>
+            <p class="blue">border-color: </p>
+            <p class="red">#85C226 #F7C200 #4493A0 #DF127B;</p>
+        </div>
+
+        <div class="border">
+            <p class="solic">
+                Here the top border is green(#85C226) in color, 
+                <br> right border id yellow(#F7C200),
+                <br> the bottom has blue(#4493A0)
+                <br> and Left border is pink(#DF127B) in color.
+            </p>
+        </div>
+    </div>
+
+    <div class="cau8b">
+        <h2 style="color: rgb(81, 79, 79);"><b>Border Styles</b></h2>
+        <div class="important">Important</div>
+        <p>This property must be used if you are using any of the Border properties.<br>Without using this border-style property you won't see any borders at all.</p>
+        <div id="color">
+            <p class="solid">Sytax: </p>
+            <p class="blue">border-color: </p>
+            <p class="red">(top) (right) (bottom) (left);</p>
+        </div>
+
+        <div id="color">
+            <p class="solid">Example: </p>
+            <p class="blue">border-color: </p>
+            <p class="red">sloid dotted groove double;</p>
+        </div>
+
+        <div class="border">
+            <p class="solid"><b>
+                Here the top border (green) has a solid style, 
+                <br> right (yellow) one has dotted,
+                <br> bottom (blue) one has groove and
+                <br> the left (pink) one has the double style.</b>
+            </p>
+        </div>
+    </div>
+	
+    <div class="_axcau8c">
+        <h2 style="color: rgb(81, 79, 79);"><b>Border Width</b></h2>
+        <div id="color">
+            <p class="_axsolic">Sytax: </p>
+            <p class="_axblue">border-color: </p>
+            <p class="_axred">(top) (right) (bottom) (left);</p>
+        </div>
+
+        <div id="color">
+            <p class="_axsolic">Example: </p>
+            <p class="_axblue">border-color: </p>
+            <p class="_axred">5px 10px 15px 20px;</p>
+        </div>
+
+        <div class="_axborder">
+            <p class="_axsolic">
+                Here Top (green) border's width is 5 pixel, 
+                <br> right (yellow) border is 10 pixel,
+                <br> bottom (blue) is 15 pixel
+                <br> and left pink is 20 pixel wide.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container {
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 80%;
+            margin-left: 100px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        .row::before, .row::after {
+            display: table;
+            content: "";
+        }
+
+        .row::after {
+            clear: both;
+        }
+
+        .col1, .col2, .col3 {
+            float: left;
+            width: 25.3333333333%;
+            margin: 1%;
+            padding: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus necessitatibus, alias dolore dolor, fugiat molestiae dignissimos hic blanditiis voluptate eveniet ullam eligendi sit praesentium debitis error cum in consequatur?
+                Neque possimus perspiciatis placeat omnis ea, eaque impedit animi quibusdam temporibus vero quisquam nobis reiciendis optio! A, accusamus! Quod pariatur officia eos saepe ipsam quae repellendus placeat magnam, laboriosam vel!</p>
+            </div>
+
+            <div class="col2">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia obcaecati omnis tempora voluptatum sequi explicabo! Officiis laboriosam accusamus delectus. Possimus recusandae culpa odio maiores, asperiores eaque odit minima omnis quo?
+                Accusamus dolore fugiat perferendis dolorem animi facere reprehenderit, veritatis architecto eaque amet consequatur sint, perspiciatis eos ducimus quam. Voluptate distinctio nisi perspiciatis iusto quia voluptas dolorum magnam, laudantium ipsa voluptatem?</p>
+            </div>
+
+            <div class="col3">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto necessitatibus minus magnam nesciunt ipsam illo esse. Adipisci maxime placeat quidem cum officiis consectetur in saepe commodi? Veritatis, in necessitatibus.
+                Doloribus voluptate iste, quam ducimus quibusdam adipisci quidem dignissimos quaerat ipsam deleniti ex cum labore, perferendis similique facere dolores esse? Optio repudiandae ipsa totam enim vero necessitatibus quia corporis quae.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id reprehenderit deleniti tempore ducimus aliquam itaque rem iusto voluptatum incidunt doloremque temporibus praesentium mollitia accusantium vitae eos, magni cum odio aperiam.</p>
+            </div>
+
+            <div class="col2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eius voluptatum alias ad ducimus similique corporis? Id, maiores delectus! Dolor quis nam saepe id facere quaerat in, debitis expedita mollitia.</p>
+            </div>
+
+            <div class="col3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est laborum accusamus ipsa quis soluta nihil odio consequuntur ipsam accusantium voluptatem repudiandae inventore non alias possimus delectus, aliquam laudantium sed id!</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
