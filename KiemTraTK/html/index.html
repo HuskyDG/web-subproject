@@ -1,90 +1,153 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-        }
-        
-        *[r] {
-            background-color: red;
-        }
-        
-        .header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding-left: 120px;
-            padding-right: 190px;
-        }
-        
-        .left-header {
-            display: flex;
-            justify-content: space-between;
-            width: 240px;
-            padding-top: 15px;
-            flex-wrap: wrap;
-        }
-        
-        .logo {
-            padding-top: 6px;
-            margin-left: 100px;
-        }
-        
-        .right-header {
-            display: flex;
-            justify-content: space-around;
-            width: 31%;
-            padding-top: 10px;
-        }
-        
-        div.h {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        div.item {
-            padding: 0 2px 0 2px;
-            display: inline-block;
-        }
-        
-        input.search {
-            width: 195px;
-            height: 34px;
-            border-radius: 5px;
-            border: 1px solid gray;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="header">
-        <div class="left-header">
+   <head>
+      <style>
+         * {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 15px;
+         }
+         *[r] {
+         background-color: red;
+         }
+         .header {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         padding-left: 120px;
+         padding-right: 190px;
+         }
+         .left-header {
+         display: flex;
+         justify-content: space-between;
+         width: 240px;
+         padding-top: 15px;
+         flex-wrap: wrap;
+         }
+         .logo {
+         padding-top: 6px;
+         margin-left: 100px;
+         }
+         .right-header {
+         display: flex;
+         justify-content: space-around;
+         width: 31%;
+         padding-top: 10px;
+         }
+         div.h {
+         display: flex;
+         }
+         div.item {
+         padding: 0 2px 0 2px;
+         display: inline-block;
+         }
+         input.search {
+         width: 195px;
+         height: 34px;
+         border-radius: 5px;
+         border: 1px solid gray;
+         }
+         .xxxx {
+         display: flex;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         }
+         .xxx {
+         display: inline-block;
+         margin: 0px 10px 10px 10px;
+         color: green;
+         }
+         ._xxx {
+         display: inline-block;
+         margin: 0px 10px 0px 10px;
+         }
+         .body {
+         margin-top: 94px;
+         margin-left: 94px; 
+         margin-right: 306px;
+         }
+         .flex_1 {
+         display: flex;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         }
+         .flex_1 > .product_img > div {
+         margin: 10px;
+         }
+		 
+		 .xxxx > ul > li {
+			display: inline-block;
+		 }
+		 
+		 .xxxx > ul > li > img {
+			width: 15px;
+		 }
+		 
+		 .product_show {
+			position:relative;
+		 }
+		 
+		 .product_show >  p {
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin-top: 20px;
+   margin-right: 20px;
+   text-align: right;
+   z-index:10;
+   }
+      </style>
+   </head>
+   <body>
+      <div class="header">
+         <div class="left-header" >
             <div style="color:green; font-weight:bold">Shop</div>
             <div>Offers</div>
             <div>Our story</div>
             <div>Blog</div>
-        </div>
-        <div class="logo"><img src="../image/Image 1 (13).png" /></div>
-        <div class="right-header">
+         </div>
+         <div class="logo" r><img src="../image/Image 1 (13).png" /></div>
+         <div class="right-header">
             <div class="h">
-                <input type="text" class="search" />
-                <div class="item">
-                    <img src="../image/Button 1.png" />
-                </div>
-                <div class="item">
-                    <img src="../image/Button 1 (1).png" />
-                </div>
+               <input type="text" class="search" />
+               <div class="item">
+                  <img src="../image/Button 1.png" />
+               </div>
+               <div class="item">
+                  <img src="../image/Button 1 (1).png" />
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="body" r style="margin-top: 94px; margin-left: 94px; margin-right: 306px;">
-        <p>Home > Shop > Product type > Detail</p>
-
-    </div>
-
-</body>
-
+         </div>
+      </div>
+      <div class="body">
+      <div class="xxxx">
+         <ul>
+         <li>
+            <div class="xxx">Home</div>
+         </li>
+         <li><img src="../image/caret right 1.png"/></li>
+         <li>
+            <div class="xxx">Shop</div>
+         </li>
+         <li><img src="../image/caret right 1.png"/></li>
+         <li>
+            <div class="xxx">Product type</div>
+         </li>
+         <li><img src="../image/caret right 1.png"/></li>
+         <li>
+            <div class="_xxx">Detail</div>
+         </li>
+      </div>
+      <div class="flex_1">
+         <div class="product_img">
+            <div><img src="../image/Image 1.png"/></div>
+            <div><img src="../image/Image 1 (1).png"/></div>
+            <div><img src="../image/Image 1 (2).png"/></div>
+            <div><img src="../image/Image 1 (3).png"/></div>
+         </div>
+         <div class="product_show">
+            <img  src="../image/Image 1 (4).png"/>
+			<p> dkjcij</p>
+         </div>
+      </div>
+   </body>
 </html>
