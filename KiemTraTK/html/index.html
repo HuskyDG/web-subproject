@@ -1,153 +1,310 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <style>
-         * {
-         font-family: Arial, Helvetica, sans-serif;
-         font-size: 15px;
-         }
-         *[r] {
-         background-color: red;
-         }
-         .header {
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         padding-left: 120px;
-         padding-right: 190px;
-         }
-         .left-header {
-         display: flex;
-         justify-content: space-between;
-         width: 240px;
-         padding-top: 15px;
-         flex-wrap: wrap;
-         }
-         .logo {
-         padding-top: 6px;
-         margin-left: 100px;
-         }
-         .right-header {
-         display: flex;
-         justify-content: space-around;
-         width: 31%;
-         padding-top: 10px;
-         }
-         div.h {
-         display: flex;
-         }
-         div.item {
-         padding: 0 2px 0 2px;
-         display: inline-block;
-         }
-         input.search {
-         width: 195px;
-         height: 34px;
-         border-radius: 5px;
-         border: 1px solid gray;
-         }
-         .xxxx {
-         display: flex;
-         margin-top: 10px;
-         margin-bottom: 10px;
-         }
-         .xxx {
-         display: inline-block;
-         margin: 0px 10px 10px 10px;
-         color: green;
-         }
-         ._xxx {
-         display: inline-block;
-         margin: 0px 10px 0px 10px;
-         }
-         .body {
-         margin-top: 94px;
-         margin-left: 94px; 
-         margin-right: 306px;
-         }
-         .flex_1 {
-         display: flex;
-         margin-top: 15px;
-         margin-bottom: 15px;
-         }
-         .flex_1 > .product_img > div {
-         margin: 10px;
-         }
-		 
-		 .xxxx > ul > li {
-			display: inline-block;
-		 }
-		 
-		 .xxxx > ul > li > img {
-			width: 15px;
-		 }
-		 
-		 .product_show {
-			position:relative;
-		 }
-		 
-		 .product_show >  p {
-   position: absolute;
-   top: 0;
-   right: 0;
-   margin-top: 20px;
-   margin-right: 20px;
-   text-align: right;
-   z-index:10;
-   }
-      </style>
-   </head>
-   <body>
-      <div class="header">
-         <div class="left-header" >
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        *[r] {
+            background-color: red;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 120px;
+            padding-right: 190px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 90px 0px;
+            background-color: black;
+            color: white;
+            justify-content: space-around;
+        }
+
+        .left-header {
+            display: flex;
+            justify-content: space-between;
+            width: 240px;
+            padding-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            padding-top: 6px;
+            margin-left: 100px;
+        }
+
+        .right-header {
+            display: flex;
+            justify-content: space-around;
+            width: 31%;
+            padding-top: 10px;
+        }
+
+        div.h {
+            display: flex;
+        }
+
+        div.item {
+            padding: 0 2px 0 2px;
+            display: inline-block;
+        }
+
+        input.search {
+            width: 195px;
+            height: 34px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        .xxxx {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .xxx {
+            display: inline-block;
+            margin: 0px 10px 10px 10px;
+            color: green;
+        }
+
+        ._xxx {
+            color: black;
+        }
+
+        .xxxx > div > img {
+            width: 15px;
+        }
+
+        .body {
+            margin-top: 94px;
+            margin-left: 94px;
+            margin-right: 306px;
+        }
+
+        .flex_1 {
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+            .flex_1 > .product_img > div {
+                margin: 10px;
+            }
+
+        .product_show {
+            position: relative;
+        }
+
+            .product_show > .best_seller {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin-top: 20px;
+                margin-right: 20px;
+                text-align: right;
+                z-index: 10;
+            }
+
+        .best_seller {
+            background-color: orange;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .flex_2 {
+            display: flex;
+            justify-content: space-between;
+            width: 492px;
+            line-height: 25px;
+        }
+
+        .footer_right_last {
+            display: flex;
+            justify-content: space-around;
+            width: 380px;
+            height: 22px;
+            padding-left: 30px;
+        }
+
+        #ul_last {
+            display: flex;
+            padding: 0px;
+        }
+
+            #ul_last li {
+                margin-left: 20px;
+            }
+
+        #c_last {
+            border-radius: 20px;
+            width: 20px;
+            height: 20px;
+            color: #ddd;
+            background-color: #1D2128;
+            border-color: #ddd;
+        }
+
+        .footer_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 230px;
+        }
+
+        .img_footer img {
+            margin-left: 10px;
+        }
+
+        .input_your_email {
+            display:inline-block;
+            position: relative;
+        }
+
+        #img_mail {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 15px;
+        }
+
+        #input_mail {
+            width: 100%;
+            height: 50px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding-left: 60px;
+            background-color: #1D2128;
+            font-size: 16px;
+        }
+
+        #sub {
+            background-color: #459D7A;
+            position: absolute;
+            width: 123px;
+            height: 50px;
+            right: 0;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            padding-top: 15px;
+            padding-left: 30px
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
             <div style="color:green; font-weight:bold">Shop</div>
             <div>Offers</div>
             <div>Our story</div>
             <div>Blog</div>
-         </div>
-         <div class="logo" r><img src="../image/Image 1 (13).png" /></div>
-         <div class="right-header">
+        </div>
+        <div class="logo"><img src="../image/Image 1 (13).png" /></div>
+        <div class="right-header">
             <div class="h">
-               <input type="text" class="search" />
-               <div class="item">
-                  <img src="../image/Button 1.png" />
-               </div>
-               <div class="item">
-                  <img src="../image/Button 1 (1).png" />
-               </div>
+                <input type="text" class="search" />
+                <div class="item">
+                    <img src="../image/Button 1.png" />
+                </div>
+                <div class="item">
+                    <img src="../image/Button 1 (1).png" />
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="body">
-      <div class="xxxx">
-         <ul>
-         <li>
+        </div>
+    </div>
+    <div class="body">
+        <div class="xxxx">
             <div class="xxx">Home</div>
-         </li>
-         <li><img src="../image/caret right 1.png"/></li>
-         <li>
+            <div class="xxx"><img src="../image/caret right 1.png" /></div>
             <div class="xxx">Shop</div>
-         </li>
-         <li><img src="../image/caret right 1.png"/></li>
-         <li>
+            <div class="xxx"><img src="../image/caret right 1.png" /></div>
             <div class="xxx">Product type</div>
-         </li>
-         <li><img src="../image/caret right 1.png"/></li>
-         <li>
-            <div class="_xxx">Detail</div>
-         </li>
-      </div>
-      <div class="flex_1">
-         <div class="product_img">
-            <div><img src="../image/Image 1.png"/></div>
-            <div><img src="../image/Image 1 (1).png"/></div>
-            <div><img src="../image/Image 1 (2).png"/></div>
-            <div><img src="../image/Image 1 (3).png"/></div>
-         </div>
-         <div class="product_show">
-            <img  src="../image/Image 1 (4).png"/>
-			<p> dkjcij</p>
-         </div>
-      </div>
-   </body>
+            <div class="xxx"><img src="../image/caret right 1.png" /></div>
+            <div class="xxx">Detail</div>
+        </div>
+        <div class="flex_1">
+            <div class="product_img">
+                <div><img src="../image/Image 1.png" /></div>
+                <div><img src="../image/Image 1 (1).png" /></div>
+                <div><img src="../image/Image 1 (2).png" /></div>
+                <div><img src="../image/Image 1 (3).png" /></div>
+            </div>
+            <div class="product_show">
+                <img src="../image/Image 1 (4).png" />
+                <div class="best_seller">Best seller</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="flex_2">
+            <div class="foot_item">
+                <h2>About</h2>
+                <p>Home</p>
+                <p>Our story</p>
+                <p>Blog</p>
+                <select style="border-radius: 5px; width: 128px; padding: 8px; border: 1px solid white; background-color: inherit; color: white">
+                    <option>English</option>
+                </select>
+            </div>
+            <div class="foot_item">
+                <h2>Help</h2>
+                <p>Shipping and Returns</p>
+                <p>Track Order</p>
+                <p>FAQs</p>
+            </div>
+            <div class="foot_item">
+                <h2>Contact</h2>
+                <p>Phone:</p>
+                <p><b>(+1) 123 456 7893</b></p>
+                <p>Email:</p>
+                <p><b>name@gamil.com</b></p>
+            </div>
+        </div>
+        <div class="footer_right">
+            <h3>Receive new promotions</h3>
+            <p>Duis ea tempor commodo amet reprehende</p>
+            <div class="input_your_email">
+                <img id="img_mail" src="../image/mail.jpg" alt="">
+                <input id="input_mail" type="email" placeholder="Input your email">
+                <span id="sub">Subscribe</span>
+            </div>
+
+            <div class="img_footer">
+                <img src="../image/Twitter 1.png" alt="">
+                <img src="../image/Facebook 1.png" alt="">
+                <img src="../image/LinkedIn 1.png" alt="">
+                <img src="../image/YouTube 1.png" alt="">
+            </div>
+
+            <div class="footer_right_last" style="width:400px">
+                <button id="c_last">C</button>
+                <div style="display: flex; align-items: center; justify-content: space-around">
+                    <span>2022 Brand, Inc.</span>
+                    <ul id="ul_last">
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
 </html>
