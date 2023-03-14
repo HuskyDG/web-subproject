@@ -7,6 +7,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
             font-size: 15px;
@@ -92,13 +93,14 @@
         .body {
             margin-top: 94px;
             margin-left: 94px;
-            margin-right: 306px;
+            margin-right: 12%;
         }
 
         .flex_1 {
             display: flex;
             margin-top: 15px;
             margin-bottom: 15px;
+            justify-content: space-between;
         }
 
             .flex_1 > .product_img > div {
@@ -109,7 +111,7 @@
             position: relative;
         }
 
-            .product_show > .best_seller {
+            .best_seller {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -124,6 +126,149 @@
             padding: 5px;
             border-radius: 20px;
         }
+
+        #product_name_right {
+            width: 50%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .span_product_name {
+            margin: 10px 0;
+        }
+
+        #choose_ml {
+            width: 98%;
+            height: 45px;
+            color: grey;
+            background-color: #f0f0f1;
+            border-radius: 4px;
+            border: none;
+            padding-left: 16px;
+            font-size: 16px;
+        }
+
+        .quantity span {
+            display: inline-block;
+            width: 40px;
+            height: 45px;
+            color: #323842;
+            background-color: #f0f0f1;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        .quantity p, .choose_size p {
+            margin-bottom: 3px;
+        }
+
+        .add_to_bag {
+            position: relative;
+        }
+
+            .add_to_bag button, .checkout button {
+                width: 260px;
+                height: 50px;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            .add_to_bag button {
+                color: green;
+                background-color: #fff;
+                border: 1px solid green;
+                padding-left: 20px;
+            }
+
+            .add_to_bag img {
+                position: absolute;
+                top: 8px;
+                left: 60px;
+                width: 35px;
+                height: 35px;
+            }
+
+        .checkout button {
+            color: #fff;
+            background-color: #459D7A;
+            border: none;
+        }
+
+        .add_check {
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .product {
+            position: relative;
+        }
+
+        .relatedProduct {
+            width: 100%;
+        }
+
+
+        .mg_bt_16 {
+            margin-bottom: 16px;
+        }
+
+        .mg_bt_0 {
+            margin-bottom: 0;
+        }
+
+        .mg_t_8 {
+            margin-top: 8px;
+        }
+
+        .mg_bt_80 {
+            margin-bottom: 80px;
+        }
+
+        .pd_r_16 {
+            padding-right: 16px;
+        }
+
+        .green {
+            color: #458D7A;
+        }
+
+
+        .container3 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .line {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .to {
+            font-size: 30px;
+        }
+
+        .so {
+            color: #94979D;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .shopping {
+            margin-right: 8px;
+        }
+
+        .cou {
+            display: flex;
+        }
+
+        .product {
+            position: relative;
+        }
+
 
         .flex_2 {
             display: flex;
@@ -170,7 +315,7 @@
         }
 
         .input_your_email {
-            display:inline-block;
+            display: inline-block;
             position: relative;
         }
 
@@ -247,6 +392,142 @@
             <div class="product_show">
                 <img src="../image/Image 1 (4).png" />
                 <div class="best_seller">Best seller</div>
+            </div>
+            <div id="product_name_right">
+                <h1 class="h1" style="margin-bottom: 0;">Product name</h1>
+                <p class="grey">Aliquip ipsum nostud ex eu incididunt</p>
+                <div class="span_product_name">
+                    <span class="to" style="color: #459D7A; font-size: 40px; "><b>$32</b></span>
+                    <span class="so">$42</span>
+                </div>
+                <p class="grey">In uliamco labore molit et exercitation fugiat exercitation minim ex sint uliamco exercitation amet officia omolit. Qui cillum parrilatur in con</p>
+
+                <div class="review_product_name">
+                    <span><b>368</b></span>
+                    <span class="grey">reviews</span>
+                    <span><b>823</b></span>
+                    <span class="grey">sold</span>
+                    <img src="../image/Rating 4.5.png" alt="">
+                    <span><b>4.5</b></span>
+                </div>
+
+                <div class="free_shipping">
+                    <img src="../image/Check circle 1.png" alt="">
+                    <span class="grey">Free Shipping on orders over $49 USD</span>
+                </div>
+
+                <div class="free_shipping">
+                    <img src="../image/Check circle 1.png" alt="">
+                    <span class="grey">Free + easy returns</span>
+                </div>
+
+                <div class="choose_size">
+                    <p class="black_grey"><b>Choose size</b></p>
+                    <select name="50.00 ML" id="choose_ml">
+                        <option>50.00 ML</option>
+                        <option>100.00 ML</option>
+                    </select>
+                </div>
+
+                <div class="quantity">
+                    <p class="black_grey"><b>Quantity</b></p>
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </div>
+
+                <div class="add_check">
+                    <div class="add_to_bag">
+                        <img src="../image/cart0.png" alt="">
+                        <button>Add to bag</button>
+                    </div>
+
+                    <div class="checkout">
+                        <button>Checkout</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="relatedProduct mg_bt_80">
+            <h1 class="h1">Related products</h1>
+            <div class="container3">
+                <div class="product">
+                    <img src="../image/Image 1 (5).png" alt="" style="border-radius: 5px;">
+                    <p class="mg_t_8"><b>Product title</b></p>
+                    <p>Labore sint isum dolore molit</p>
+                    <div class="line">
+                        <div class="cou">
+                            <p class="to"><b>$22</b></p>
+                            <p class="so">$28</p>
+                        </div>
+                        <div class="shopping">
+                            <img src="../image/cart0.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../image/Image 1 (6).png" alt="" style="border-radius: 5px;">
+                    <p class="mg_t_8"><b>Product title</b></p>
+                    <p>Labore sint isum dolore molit</p>
+                    <div class="line">
+                        <div class="cou">
+                            <p class="to"><b>$48</b></p>
+                            <p class="so">$56</p>
+                        </div>
+                        <div class="shopping">
+                            <img src="../image/cart0.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="best_seller_product">
+                        <div class="best_seller">Best seller</div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../image/Image 1 (7).png" alt="" style="border-radius: 5px;">
+                    <p class="mg_t_8"><b>Product title</b></p>
+                    <p>Labore sint isum dolore molit</p>
+                    <div class="line">
+                        <div class="cou">
+                            <p class="to"><b>$18</b></p>
+                            <p class="so">$26</p>
+                        </div>
+                        <div class="shopping">
+                            <img src="../image/cart0.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="best_seller_product">
+                        <div class="best_seller">Best seller</div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../image/Image 1 (8).png" alt="" style="border-radius: 5px;">
+                    <p class="mg_t_8"><b>Product title</b></p>
+                    <p>Labore sint isum dolore molit</p>
+                    <div class="line">
+                        <div class="cou">
+                            <p class="to"><b>$32</b></p>
+                            <p class="so">$42</p>
+                        </div>
+                        <div class="shopping">
+                            <img src="../image/cart0.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="best_seller_product">
+                        <p>Best-seller</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
