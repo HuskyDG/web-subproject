@@ -350,11 +350,11 @@ input.search {
 .Benefits {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .benefits_left {
     width: 40%;
-    margin-top: 150px;
 }
 
 .grey {
@@ -364,7 +364,7 @@ input.search {
 
 .ingre {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .img {
@@ -391,3 +391,152 @@ input.search {
     margin: auto;
     margin-top: 16px;
 }
+
+
+.how_to_use {
+    position: relative;
+}
+
+.howto {
+    width: 100%;
+}
+
+.watch_video button {
+    background-color: #333;
+    color: #fff;
+    width: 175px;
+    height: 50px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    padding-right: 8px;
+}
+
+.watch_video img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    top: 52%;
+    right: 42.5%;
+}
+
+/* REVIEWS */
+.reviews {
+    background-color: #FAFAFB;
+    padding: 20px 0;
+    width: 98%;
+    margin-left: 1%;
+}
+
+.write_review {
+    background-color: #FAFAFB;
+}
+
+.review_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review_one {
+    display: flex;
+}
+
+.review_two span {
+    margin-top: 5px;
+    margin-right: 4px;
+}
+
+.star_line {
+    margin: 0 8px;
+}
+
+.review_two, .review_right_top1, .left_right_reviews {
+    display: flex;
+}
+
+.img_user img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.reviews_left {
+    width: 40%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews_right {
+    width: 55%;
+}
+
+.count {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+    .count button {
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        border-color: green;
+    }
+
+    .count p {
+        padding-top: 6px;
+    }
+
+#two {
+    text-align: center;
+}
+
+#chamcham {
+    line-height: 12px;
+}
+
+/* FAQs */
+.faqs {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.faqs_lr {
+    display: flex;
+    color: grey;
+    justify-content: space-evenly;
+}
+
+.faqs_left, .faqs_right {
+    width: 48%;
+    height: 300px;
+}
+
+#faqs_left_one, #faqs_right_one {
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    #faqs_left_one:first-child {
+        flex-direction: column;
+    }
+
+    #faqs_left_one p, #faqs_right_one p {
+        margin: 10px;
+    }
+
+    #faqs_right_one img, #faqs_left_one img {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        margin-right: 8px;
+    }
