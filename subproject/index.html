@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Website bán đồng hồ</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-	</head>
+<head>
+	<title>Website bán đồng hồ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			padding: 0px;
+			margin: 0px;
+			font-family: Arial;
+		}
+        /* Testing */
+        *[r] {
+            background-color: red;
+        }
+
+		.flex {
+			display: flex;
+		}
+		.flex2 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.header {
+			justify-content: space-between;
+			background-color: white;
+			color: black;
+		}
+
+		.item-center {
+			align-items: center;
+		}
+
+		.wrapable {
+			flex-wrap: wrap;
+		}
+
+        a.menu {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+			font-weight: bold;
+			color: darkgray;
+        }
+		a.menu:hover {
+			color: red!important;
+		}
+
+		.logo {
+			width: 20%;
+		}
+
+        .text-center {
+            text-align: center;
+        }
+
+		.text-right {
+			text-align: right;
+		}
+
+        .float-right {
+            float: right;
+        }
+
+		.option {
+			width: 10em;
+		}
+
+        .option > div > img {
+			width: 1em;
+        }
+
+		.option > div {
+			margin: 15px;
+		}
+
+        .preview {
+            height: 393px;
+            background-color: #3b4a6b;
+			border-radius: 0 0 0 200px;
+            padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 100px;
+			padding-bottom: 100px;
+            justify-content: space-between;
+        }
+
+		.preview > div {
+			width: 47%;
+		}
+	</style>
+</head>
 	<body>
-	
+		<div class="flex header item-center wrapable">
+			<div class="logo">
+				<img src="./image/logo.gif"/>
+			</div>
+			<div class="flex menu wrapable text-center" style="width: 60%; justify-content: space-around">
+                <div class="flex wrapable" style="width: 48%">
+                    <a href="./index.html" class="menu">HOME</a>
+                    <a href="./index.html" class="menu">WATCHES</a>
+                    <a href="./index.html" class="menu">ABOUT</a>
+                    <a href="./index.html" class="menu">CONTACT US</a>
+                </div>
+			</div>
+			<div style="width: 20%; justify-content: space-around;">
+				<div class="flex float-right option" style="padding-right: 20px;">
+					<div><img src="./image/user.png" /></div>
+					<div><img src="./image/shop.png" /></div>
+					<div><img src="./image/settings.png" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="body container">
+			<div class="preview flex item-center">
+				<div class="info">
+					<h1 style="font-size: 5em">Smart Watches</h1>
+					<p>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</p>
+				</div>
+				<div class="clock">
+					<img src="image/top-product.png" width="100%"/>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
