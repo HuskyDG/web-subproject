@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+        }
+        
+        #right {
+            width: 440px;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        
+        .flex,
+        .column,
+        .row {
+            display: flex;
+        }
+        
+        .column {
+            flex-direction: column;
+        }
+        
+        .row {
+            flex-direction: row;
+        }
+        
+        .block1 {
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .material_red {
+            border: solid red 1px;
+            padding: 10px 15px;
+            color: red;
+            display: inline-block;
+        }
+        
+        .material_red_b {
+            border: solid none 1px;
+            padding: 9px 10px;
+            color: white;
+            background-color: red;
+        }
+        
+        .center-item {
+            align-items: center;
+        }
+        
+        .block2 {
+            font-size: 15px;
+        }
+        
+        .block2>div {
+            margin: 10px;
+        }
+        
+        .block3>div {
+            margin: 20px
+        }
+        
+        .block4 {
+            justify-content: space-around;
+        }
+        
+        .block5>div {
+            margin: 5px;
+            height: 44px;
+        }
+        
+        .make_relative {
+            position: relative;
+        }
+        
+        .make_absolute {
+            position: absolute;
+        }
+        
+        .name {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            left: 20px;
+            top: 20px;
+            color: white;
+        }
+
+        .block6 {
+            padding: 0 40px 40px 40px;
+        }
+
+        .block7 {
+            justify-content: space-between;
+        }
+
+        .online {
+            background-color: #ffcdcd;
+            color: red;
+            width: 1em;
+            height: 1em;
+            padding: 5px;
+            text-align:center;
+            border-radius: 1em;
+        }
+
+        .block8 > div {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .user > div {
+            padding: 5px 0 5px 0;
+        }
+
+        td.tname {
+            padding-left: 20px;
+        }
+
+        td.message {
+            padding: 20px;
+            background-color: rgb(0, 0, 0, 0.05);
+        }
+
+        td.typing {
+            opacity: 0.5;
+        }
+
+        .chatbox {
+            overflow: auto;
+            height: 500px;
+        }
+
+        .make_sticky {
+            position: sticky;
+        }
+
+        .enter {
+            bottom: 10px;
+        }
+
+        .addmsg {
+            height: 20px;
+            font-size: 20px;
+            padding: 10px;
+            width: 70%;
+        }
+
+        .sendmsg {
+            height: 30px;
+            display: inline-block;
+            padding: 0 30px 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="logo.png" alt="">
+                    <img class="item" src="home.png" alt="">
+                    <img class="item" src="cam.png" alt="">
+                    <img class="item" src="chatting.png" alt="">
+                    <img class="item" src="user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="avatar.png" width="44" alt="">
+                    <img id="setting" src="setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <div class="column">
+                    <div class="flex block1" style="">
+                        <div>
+                            <h2>Meetting title</h2>
+                        </div>
+                        <div class="material_red" style="border-radius: 30px;">
+                            <div class="flex center-item">
+                                <div style="font-size:40px; margin: -20px 10px -20px 0px;">•</div>
+                                <div>12:00</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex center-item block2">
+                        <div class="material_red_b row center-item" style="border-radius:30px; font-weight: 100; font-size: 12px;">
+                            <div style="background-size: cover;margin-right: 10px; background-image: url('./user.png'); width:1em; height: 1em;"></div>
+                            <div>Internal</div>
+                        </div>
+
+                        <div class="row center-item">
+                            <div style="margin-right: 10px; background-size: cover; background-image:url(./calender.png); width: 1em; height: 1em; "></div>
+                            <div>Sep 02, 2022</div>
+                        </div>
+
+                        <div class="flex center-item ">
+                            <div>|</div>
+                        </div>
+
+                        <div class="flex center-item ">
+                            <div>08:00 - 09:00</div>
+                        </div>
+                    </div>
+                    <div class="column block3" style="width: 95%;">
+                        <div class="make_relative"><img src="img_big.png" style="width: 100%; border-radius: 0px 0px 20px 20px;" />
+                            <div class="make_absolute name">Hello!</div>
+                        </div>
+                        <div class="flex" style="justify-content: space-between;">
+                            <div class="make_relative"><img src="img2.png" />
+                                <div class="make_absolute name">Hello!</div>
+                            </div>
+                            <div class="make_relative"><img src="img1.png" />
+                                <div class="make_absolute name">Hello!</div>
+                            </div>
+                            <div class="make_relative"><img src="img.png" />
+                                <div class="make_absolute name">Hello!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex block4">
+                        <div class="flex block5">
+                            <div><img src="./mic_grey_color.png" /></div>
+                            <div><img src="./cam_color.png" /></div>
+                            <div><img src="./speaker_grey_color.png" /></div>
+                            <div class="flex center-item" style="background-color: red; padding: 0px 12px 0px 12px; color: white; border-radius: 5px;">
+                                <div>End Meeting</div>
+                            </div>
+                            <div><img src="./Button 2179.png" /></div>
+                            <div><img src="./share.png" /></div>
+                            <div><img src="./....png" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="block6">
+                    <div class="flex row center-item block7">
+                        <div class="flex center-item">
+                            <div><h2>Participating</h2></div>
+                            <div style="width:10px;"></div>
+                            <div class="online">4</div>
+                        </div>
+                        <div class="material_red" style="border-radius: 10px;">Add</div>
+                    </div>
+                    <div style="height: 10px"></div>
+                    <div class="user">
+                        <div class="flex row center-item block7">
+                            <div class="flex center-item">
+                                <div><img src="avatar 1322.png" /></div>
+                                <div style="width:20px;"></div>
+                                <div>Hello!</div>
+                            </div>
+                            <div class="flex center-item block8">
+                                <div><img src="mic1.png" /></div>
+                                <div><img src="cam_small.png" /></div>
+                                <div><img src="mic1.png" /></div>
+                            </div>
+                        </div>
+                        <div class="flex row center-item block7">
+                            <div class="flex center-item">
+                                <div><img src="avatar 1323.png" /></div>
+                                <div style="width:20px;"></div>
+                                <div>Hello!</div>
+                            </div>
+                            <div class="flex center-item block8">
+                                <div><img src="mic1.png" /></div>
+                                <div><img src="cam_small.png" /></div>
+                                <div><img src="mic1.png" /></div>
+                            </div>
+                        </div>
+                        <div class="flex row center-item block7">
+                            <div class="flex center-item">
+                                <div><img src="avatar 1324.png" /></div>
+                                <div style="width:20px;"></div>
+                                <div>Hello!</div>
+                            </div>
+                            <div class="flex center-item block8">
+                                <div><img src="mic1.png" /></div>
+                                <div><img src="cam_small.png" /></div>
+                                <div><img src="mic1.png" /></div>
+                            </div>
+                        </div>
+                        <div class="flex row center-item block7">
+                            <div class="flex center-item">
+                                <div><img src="avatar 1325.png" /></div>
+                                <div style="width:20px;"></div>
+                                <div>Hello!</div>
+                            </div>
+                            <div class="flex center-item block8">
+                                <div><img src="mic1.png" /></div>
+                                <div><img src="cam_small.png" /></div>
+                                <div><img src="mic1.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block6">
+                    <div class="flex row center-item block7">
+                        <div class="flex center-item">
+                            <div><h2>Chat</h2></div>
+                        </div>
+                        <div class="material_red" style="border-radius: 10px;">Add</div>
+                    </div>
+                    <div style="height: 10px"></div>
+                </div>
+                <div class="chatbox make_relative">
+                    <div class="flex chat block6">
+                        <table>
+                            <tr><td class="avt"><img src="avatar 1326.png" /></td><td class="tname">Hello!</td></tr>
+                            <tr><td></td><td class="message">Let's talk something!</td></tr>
+                        </table>
+                    </div>
+                    <div class="flex chat block6">
+                        <table>
+                            <tr><td class="avt"><img src="avatar 1326.png" /></td><td class="tname">Hello!</td></tr>
+                            <tr><td></td><td class="message">Let's talk something!</td></tr>
+                        </table>
+                    </div>
+                    <div class="flex chat block6">
+                        <table>
+                            <tr><td class="avt"><img src="avatar 1326.png" /></td><td class="tname">Hello!</td></tr>
+                            <tr><td></td><td class="message">Let's talk something!</td></tr>
+                        </table>
+                    </div>
+                    <div class="flex chat block6">
+                        <table>
+                            <tr><td class="avt"><img src="avatar 1326.png" /></td><td class="tname">Hello!</td></tr>
+                            <tr><td></td><td class="message typing">Typing...</td></tr>
+                        </table>
+                    </div>
+                    <div class="enter make_sticky flex">
+                        <input name="message" class="addmsg" placeholder="Add message..." />
+                        <div class="sendmsg center-item"><img src="send.png"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
