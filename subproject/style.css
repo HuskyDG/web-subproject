@@ -1,0 +1,54 @@
+/* Footer-container */
+.footer-container{
+    padding-top: 60px;
+    background-color: #3B4A6B;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+   
+}
+
+.footer-about{
+    flex: 1;
+}
+
+
+.icon-link{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.footer-about p{
+    width: 300px;
+}
+
+.footer-reach_at{
+    flex: 1;
+}
+
+.reach-at{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-subscribe{
+    flex: 1;
+}
+
+.email{
+    width: 150px;
+    height: 30px;
+}
+.sub-btn{
+    width: 157.2px;
+    height: 30px;
+    background-color: #f0d43a;
+    color: #fff;
+
+}
