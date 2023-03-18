@@ -5,13 +5,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 	<style>
-		body {
+        body {
+            /*
 			background-color: black;
-			color: white;
-			padding: 0px;
-			margin: 0px;
-			font-family: Arial;
-		}
+			color: white;*/
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial;
+        }
         /* Testing */
         *[r] {
             background-color: red;
@@ -78,20 +79,118 @@
 			margin: 15px;
 		}
 
-        .preview {
+        .preview, .about {
             height: 393px;
             background-color: #3b4a6b;
-			border-radius: 0 0 0 200px;
             padding-left: 20px;
-			padding-right: 20px;
-			padding-top: 100px;
-			padding-bottom: 100px;
-            justify-content: space-between;
+            padding-right: 20px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            color: white;
+            justify-content: space-around;
+        }
+
+        .preview {
+			border-radius: 0 0 0 200px;
         }
 
 		.preview > div {
 			width: 47%;
 		}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "a a b c"
+                "d e f g";
+            grid-gap: 10px;
+			padding: 0 50px;
+			
+        }
+
+            .grid-container > div {
+                text-align: center;
+                align-content: center;
+                background-color: #e8e8e8;
+                border-radius: 10px;
+                height: 290px;
+                padding: 20px 0;
+				position: relative;
+            }
+
+                .grid-container > div.a {
+                    grid-area: a;
+                }
+                .grid-container > div.b {
+                    grid-area: b;
+                }
+                .grid-container > div.c {
+                    grid-area: c;
+                }
+                .grid-container > div.d {
+                    grid-area: d;
+                }
+                .grid-container > div.e {
+                    grid-area: e;
+                }
+                .grid-container > div.f {
+                    grid-area: f;
+                }
+                .grid-container > div.g {
+                    grid-area: g;
+                }
+
+        .head-label {
+			padding: 30px 0 30px 0;
+        }
+
+        .wimage > img {
+            max-width: 100%;
+            max-height: 175px;
+        }
+
+		.winfo {
+			width: 100%;
+		}
+
+        .wname {
+            position: absolute;
+            left: 30px;
+			bottom: 30px;
+        }
+
+        .wprice {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+
+        .big_btn {
+            display: inline-block;
+            background-color: #f0d43a;
+            color: white;
+            padding: 10px 50px;
+            border-radius:10px;
+            font-weight: bold;
+        }
+
+        .wlabel {
+            display: inline-block;
+            background-color: #f0d43a;
+            color: white;
+            padding: 7px 15px;
+            position: absolute;
+            border-radius: 10px 0 0 0;
+            font-weight: bold;
+            top: 0;
+            left: 0;
+        }
+
+        .about > .info > div {
+            width: 100%;
+            max-width: 420px;
+            padding: 30px;
+        }
 	</style>
 </head>
 	<body>
@@ -115,16 +214,93 @@
 				</div>
 			</div>
 		</div>
-		<div class="body container">
-			<div class="preview flex item-center wrapable">
-				<div class="info">
-					<h1 style="font-size: 5em">Smart Watches</h1>
-					<p>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</p>
-				</div>
-				<div class="clock">
-					<img src="image/top-product.png" width="100%"/>
-				</div>
-			</div>
-		</div>
+        <div class="body container">
+            <div class="preview flex item-center wrapable">
+                <div class="info">
+                    <h1 style="font-size: 5em">Smart Watches</h1>
+                    <p>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</p>
+                    <center><div class="big_btn">Contact us</div></center>
+                </div>
+                <div class="clock">
+                    <img src="image/top-product.png" width="100%" />
+                </div>
+            </div>
+            <div class="head-label">
+                <center><h1>Latest Watches</h1></center>
+            </div>
+            <div class="grid-container">
+                <div class="a">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+                    <div class="wlabel">Featured</div>
+                </div>
+                <div class="b">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+                    <div class="wlabel">New</div>
+                </div>
+                <div class="c">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+                    <div class="wlabel">New</div>
+                </div>
+                <div class="d">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+
+                    <div class="wlabel">New</div>
+                </div>
+                <div class="e">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+                    <div class="wlabel">New</div>
+                </div>
+                <div class="f">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+                    <div class="wlabel">New</div>
+                </div>
+                <div class="g">
+                    <div class="wimage"><img src="./image/w1.png" /></div>
+                    <div class="winfo flex">
+                        <div class="wname"><b>SMARTWATCH</b></div>
+                        <div class="wprice"><b>Price: 300$</b></div>
+                    </div>
+                    <div class="wlabel">New</div>
+                </div>
+            </div>
+            <div class="head-label">
+                <center><div class="big_btn">View All</div></center>
+            </div>
+            <div style="height: 30px"></div>
+
+            <div class="about flex item-center wrapable">
+                <div class="clock">
+                    <img src="image/about-img.png" style="width: 100%; max-width: 375px;" />
+                </div>
+                <div class="info">
+                    <div style="font-size: 5em">About Us</div>
+                    <div>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</div>
+                    <div><div class="big_btn">Read more</div></div>
+                </div>
+        </div>
 	</body>
 </html>
