@@ -1,0 +1,189 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            max-width: 720px;
+            margin: auto;
+            font-size: 12px;
+        }
+        .container {
+            background-color: white;
+        }
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .head {
+            height: 80px;
+            background-color: #294e79;
+            color: white;
+        }
+
+        .head-left {
+            width: 278px;
+            padding: 15px;
+        }
+
+        .head-right {
+            width: 432px;
+        }
+
+        .logo {
+            width: 35px;
+            height: 50px;
+            background-color: red;
+        }
+
+        .text {
+            margin-left: 5px;
+        }
+
+        .flex-center-item {
+            align-items: center;
+        }
+
+        .searchbox-area {
+            height: 48px;
+            width: 100%;
+            position: relative;
+        }
+
+        .searchbox {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .searchbox > form > input[type="text"] {
+            width: 178px;
+            height: 20px;
+            border: solid #356094 1px;
+            background-color: #1c3451;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .searchbox > form > input[type="submit"] {
+            height: 20px;
+            border: solid #356094 1px;
+            background-color: #1c3451;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .searchbox > form > input[type="text"]::placeholder {
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .menu {
+            justify-content: space-between;
+            margin-right: 5px;
+        }
+
+            .menu > div {
+                background-color:#3d73b1;
+                padding: 10px;
+            }
+
+        .body {
+            height: 315px;
+            background-color: white;
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .b1 {
+            font-size: 1.3em;
+            padding: 10px;
+        }
+
+        .b2 {
+            border: dashed black 1px;
+            width: 460px;
+            margin-left: 8px;
+            margin-right: 24px;
+        }
+
+        .foot {
+            height: 17px;
+            background-color: #294e79;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            padding-left: 7px;
+        }
+
+        .flower-menu {
+            position: relative;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        div:hover > .submenu {
+            display: block;
+            position: absolute;
+            left: 0px;
+            bottom: -10px;
+            background-color: gray;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head flex">
+            <div class="head-left flex flex-center-item">
+                <div class="logo"></div>
+                <div class="text flex column"><div style="font-size:2.8em">Follower 360</div><div>... to get your daily dose of luxury roses</div></div>
+            </div>
+            <div class="head-right flex column">
+                <div class="searchbox-area">
+                    <div class="searchbox">
+                        <form>
+                            <input type="text" placeholder="Seach the size..." />
+                            <input type="submit" value="GO" />
+                        </form>
+                    </div>
+                </div>
+                <div class="menu flex">
+                    <div>Home</div>
+                    <div>Promotion</div>
+                    <div>Gift Baskets</div>
+                    <div class="flower-menu">
+                        <span>Flower Services</span>
+                        <div class="submenu">
+                            hello!
+                        </div>
+                    </div>
+                    <div>About</div>
+                </div>
+            </div>
+        </div>
+        <div class="body flex">
+            <div class="body-left">
+                <div class="b1">
+                    Why Not Contact Us Today!
+                </div>
+                <div class="b2">
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <span>Copy 2017 - All Right Reserved - Software Engineering Department</span>
+        </div>
+    </div>
+
+</body>
+</html>
