@@ -1,7 +1,63 @@
 .wrapper{
     background-color: #fff;
 }
+
+
+
+/* testimonial-container */
+.testimonal-container{
+    background-color: #fff;
+    text-align: center;
+    
+}
+.testimonal-container h2{
+    color: black;
+
+}
+.testimonal-customer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.customer-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #3b4a6b;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 600px;
+}
+.customer-img img{
+    width: 100%;
+    border-radius: 100%;
+}
+.customer-img{
+    width: 125px;
+    height: 125px;
+    border: 2px dashed #f0d43a;
+    border-radius: 100%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+.customer{
+    color: #f0d43a;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.content-text{
+    width: 500px;
+    margin-bottom: 5px;
+}
+
 /* Footer-container */
+
 .footer-container{
     background-color: #3b4a6b;
     color: #fff;
@@ -16,8 +72,9 @@
     /* max-width: 1170px; */
     display: flex;
     justify-content: space-between;
-    /* padding: 0px 60px; */
+    padding-top: 30px;
     margin: 0px 150px;
+    
     
 }
 .footer-menu-col{
@@ -90,56 +147,4 @@
 .footer-copyright{
     text-align: center;
     padding: 25px 0px;
-}
-
-/* testimonial-container */
-.testimonal-container{
-    background-color: #fff;
-    text-align: center;
-    
-}
-.testimonal-container h2{
-    color: black;
-
-}
-.testimonal-customer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 70px;
-}
-.customer-1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    background-color: #3b4a6b;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: 600px;
-}
-.customer-img img{
-    width: 100%;
-    border-radius: 100%;
-}
-.customer-img{
-    width: 125px;
-    height: 125px;
-    border: 2px dashed #f0d43a;
-    border-radius: 100%;
-    padding: 5px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-
-}
-.customer{
-    color: #f0d43a;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-.content-text{
-    width: 500px;
-    margin-bottom: 5px;
 }
