@@ -13,6 +13,78 @@
     padding: 100px;
 }
 
+/* Features of Our Watches */
+
+.features-box{
+    color: #000;
+    margin: 50px 150px;
+}
+
+.features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading_features-container{
+    text-align: center;
+}
+
+.heading_features-container h2{
+    font-size: 32px;
+    margin: 0px 0px 8px;
+}
+
+.heading_features-container p{
+    font-size: 16px;
+    margin: 0px 0px 16px;
+}
+
+    /* products */
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    margin-top: 45px;
+    padding: 15px;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25),
+                -2px -2px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.product img {
+    width: 75px;
+    height: 75px;
+    margin: 15px 0px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.product a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+      
+      
+
 /* Contast Us */
 
 .contast{
