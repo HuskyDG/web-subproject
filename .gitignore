@@ -1,8 +1,2 @@
-
-KiemTraTK/html/style.css
 KiemTraTK/html/test.html
-.vs/ProjectSettings.json
-.vs/slnx.sqlite
-.vs/VSWorkspaceState.json
-.vs/web-subproject/config/applicationhost.config
-.vs/web-subproject/v16/.suo
+.vs/*
