@@ -17,13 +17,15 @@
 
 .features-box{
     color: #000;
-    margin: 50px 150px;
+    /* margin: 50px 150px; */
+    padding: 90px 0px;
 }
 
 .features-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0px 150px;
 }
 
 .heading_features-container{
@@ -83,7 +85,23 @@
     color: #333;
     text-decoration: none;
 }
-      
+
+.bnt-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.bnt-box a{
+    text-decoration: none;
+    padding: 10px 45px;
+    background-color: #f0d43a;
+    border: 1px solid #f0d43a;
+    color: #fff;
+    /* font-weight: bold; */
+    border-radius: 5px;
+
+}
       
 
 /* Contast Us */
@@ -134,14 +152,14 @@
 }
 
 .contast-container button{
-    width: 160px;
-    height: 50px;
+    padding: 14px 65px;
     background-color: #f0d43a;
     border: 1px solid #f0d43a;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
     /* font-size: 18px; */
+    margin-top: 10px;
 }
 
 
