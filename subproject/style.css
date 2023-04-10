@@ -108,13 +108,12 @@
 
 .contast{
     color: #000;
-    margin: 50px 150px;
+    /* margin: 50px 150px; */
 }
 
 .contast-container{
     display: flex;
-    /* justify-content: space-between; */
-    /* margin-top: 50px; */
+    margin: 0px 150px;
     
 }
 
