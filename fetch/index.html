@@ -1,0 +1,101 @@
+﻿<html>
+<head>
+</head>
+
+<body>
+
+
+
+  <form id="form">
+    <label for="post"> Write your post here</label>
+    <br><br>
+    <textarea name="post" id="input" cols="30" rows="10"></textarea>
+    <br> <br>
+    <div id="msg"></div>
+    <button type="submit" >Post</button>
+  </form>
+  <div class="right">
+      <h3>Your posts here</h3>
+      <div id="posts"></div>
+  </div>
+ 
+ 
+	<script type="text/javascript">
+	
+
+
+   var $ = document;
+   var form = $.getElementById('form');
+   var input = $.getElementById('input');
+   var msg = $.getElementById('msg');
+   var posts = $.getElementById('posts');
+    let data = {};
+	
+	fetch('https://jsonplaceholder.typicode.com/todos')
+		.then(function(response) {
+			if (!response.ok) {
+		        throw Error(response.statusText);
+			}
+			return response.json();
+		})
+		.then(function(json) {
+			for (var i = 0; i < json.length; i++) {
+				data["text"] = json[i].title;
+				
+				posts.innerHTML += `
+				<div>
+					<p>${data.text}</p>
+					<span class="options">
+						<i onClick="editPost(this)" class="fas fa-edit">Edit</i>
+						<i onClick="deletePost(this)" class="fas fa-trash-alt">Delete</i>
+					</span>
+				</div>`;
+	
+			}
+		})
+		.catch(function(error) {
+			console.log("Lỗi: \n", error);
+		})
+	
+	
+
+   form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log("button clicked");
+
+      formValidation();
+    });
+
+
+    let formValidation = () => {
+		msg.innerHTML = "";
+	    if (input.value == "") {
+		    msg.innerHTML = "Post is blank!";
+		} else {
+			data["text"] = input.value;
+			posts.innerHTML += `
+			<div>
+				<p>${data.text}</p>
+				<span class="options">
+					<i onClick="editPost(this)" class="fas fa-edit">Edit</i>
+					<i onClick="deletePost(this)" class="fas fa-trash-alt">Delete</i>
+				</span>
+			</div>
+  `;
+            input.value = "";
+		}
+	}
+	
+	let deletePost = (e) => {
+		e.parentElement.parentElement.remove();
+	};
+	
+	let editPost = (e) => {
+		input.value = e.parentElement.previousElementSibling.innerHTML;
+		e.parentElement.parentElement.remove();
+	};
+  </script>
+  
+</body>
+
+</html>
