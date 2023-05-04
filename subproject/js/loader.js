@@ -21,8 +21,8 @@ document.getElementById("header").innerHTML=`
 
 document.getElementById("footer").innerHTML=`
         <div class="footer">
-				<div class="footer-container">
-					<div class="footer-menu">
+				<div class="footer-container flex2 wrapable">
+					<div class="footer-menu wrapable">
 						<!--Col 1-->
 						<div class="footer-menu-col">
 							<div class="foooter-about">
