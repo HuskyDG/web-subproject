@@ -45,7 +45,7 @@
     /* products */
 .products {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .row-center {
