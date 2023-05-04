@@ -3,7 +3,7 @@ document.getElementById("header").innerHTML=`
 			<div class="logo">
 				<img src="./image/logo.gif"/>
 			</div>
-			<div class="flex menu wrapable text-center" style="width: 60%; justify-content: space-around">
+			<div class="flex submenu wrapable text-center" style="width: 60%; justify-content: space-around">
                 <div class="flex wrapable" style="width: 48%">
                     <a href="./index.html" class="menu">HOME</a>
                     <a href="./watch.html" class="menu">WATCHES</a>
@@ -11,12 +11,10 @@ document.getElementById("header").innerHTML=`
                     <a href="./contact_us.html" class="menu">CONTACT US</a>
                 </div>
 			</div>
-			<div style="width: 20%; justify-content: space-around;">
-				<div class="flex float-right option" style="padding-right: 20px;">
+			<div class="flex wrapable float-right option" style="width: 20%;">
 					<div><img src="./image/user.png" /></div>
 					<div><img src="./image/shop.png" /></div>
 					<div><img src="./image/settings.png" /></div>
-				</div>
 			</div>
 		</div>
 `;

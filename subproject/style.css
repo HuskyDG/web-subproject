@@ -6,6 +6,7 @@
 .wrapper{
     background-color: #fff;
 }
+
 /* SPACE */
 .space{
     color: #000;
@@ -539,4 +540,8 @@ a.menu {
     width: 100%;
     max-width: 420px;
     padding: 30px;
+}
+
+.submenu {
+	background-color:white;
 }
