@@ -72,3 +72,14 @@ document.getElementById("footer").innerHTML=`
 
 		</div>
 `;
+
+
+// my JQuery code
+
+$(document).ready(function(){
+    if(window.matchMedia("(max-width: 767px)").matches){
+		$(".img-box").hide();
+    } else {
+		$(".img-box").show();
+	}
+});
