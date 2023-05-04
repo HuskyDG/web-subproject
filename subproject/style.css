@@ -440,13 +440,8 @@ a.menu {
 }
 
 .preview {
-    height: 500px;
-			border-radius: 0 0 0 200px;
+	border-radius: 0 0 0 200px;
 }
-
-		.preview > div {
-			width: 47%;
-		}
 
 .grid-container {
     display: grid;
@@ -536,9 +531,9 @@ a.menu {
     left: 0;
 }
 
-.about > .info > div {
+.preview > .info,.about > .info > div {
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     padding: 30px;
 }
 
