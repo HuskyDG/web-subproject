@@ -79,6 +79,7 @@ document.getElementById("footer").innerHTML=`
 $(document).ready(function(){
     if(window.matchMedia("(max-width: 767px)").matches){
 		$(".img-box").hide();
+		$(".grid-container").css("grid-template-areas", "\"a\" \"b\" \"c\" \"d\" \"e\" \"f\" \"g\"");
     } else {
 		$(".img-box").show();
 	}
