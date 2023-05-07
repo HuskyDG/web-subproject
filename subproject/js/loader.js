@@ -1,7 +1,7 @@
 document.getElementById("header").innerHTML=`
         <div class="flex header item-center wrapable">
 			<div class="logo">
-				<img src="./image/logo.gif"/>
+				<img src="./image/logo.jpg"/>
 			</div>
 			<div class="flex submenu wrapable text-center" style="width: 60%; justify-content: space-around">
                 <div class="flex wrapable" style="width: 48%">
