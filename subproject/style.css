@@ -65,6 +65,8 @@
     border-radius: 5px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25),
                 -2px -2px 3px 0 rgba(0, 0, 0, 0.05);
+    /*Thêm hover cho phần sản phẩm*/
+  transition: background-color 0.3s ease;
 }
 
 .product img {
@@ -92,6 +94,19 @@
     text-decoration: none;
 }
 
+.product:hover {
+  background-color: #3b4a6b;
+  color: #ffffff;
+}
+
+.product:hover a {
+  color: #ffffff;
+}
+.product:hover img {
+        filter: invert(100%);
+    }
+
+
 .bnt-box{
     display: flex;
     justify-content: center;
@@ -108,7 +123,12 @@
     border-radius: 5px;
 
 }
-      
+
+.bnt-box a:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: translateY(-3px);
+}
 
 /* Contast Us */
 
