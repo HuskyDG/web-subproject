@@ -443,7 +443,6 @@ a.menu {
 		}
 
 .preview, .about {
-    background-color: #3b4a6b;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
@@ -452,7 +451,11 @@ a.menu {
     justify-content: space-around;
 }
 
-.preview {
+.preview1, .about {
+    background-color: #3b4a6b!important;
+}
+
+.preview1 {
 	border-radius: 0 0 0 200px;
 }
 
@@ -553,3 +556,24 @@ a.menu {
 .submenu {
 	background-color:white;
 }
+
+/* swipe */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

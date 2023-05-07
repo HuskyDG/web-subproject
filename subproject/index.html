@@ -1,137 +1,194 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Website bán đồng hồ</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="./fonts/fontawesome-free-6.2.1-web/css/all.min.css">
-	<script src="./lib/jquery-3.6.0.min.js"></script>
-	<script src="./lib/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Website bán đồng hồ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
-	<body>
-		<div id="header"></div>
-        <div class="body">
-            <div class="preview flex item-center wrapable">
-                <div class="info">
-                    <h1 style="font-size: 5em">Smart Watches</h1>
-                    <div>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</div>
-                    <center><div class="big_btn">Contact us</div></center>
+<body>
+    <div id="header"></div>
+    <div class="body">
+        <!-- Swiper -->
+        <div class="preview1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="preview flex item-center wrapable">
+                            <div class="info">
+                                <h1 style="font-size: 5em">Smart Watches</h1>
+                                <div>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</div>
+                                <center><div class="big_btn">Contact us</div></center>
+                            </div>
+                            <div class="clock">
+                                <img src="image/top-product.png" style="width: 100%; max-width: 375px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="preview flex item-center wrapable">
+                            <div class="info">
+                                <h1 style="font-size: 5em">Smart Watches</h1>
+                                <div>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</div>
+                                <center><div class="big_btn">Contact us</div></center>
+                            </div>
+                            <div class="clock">
+                                <img src="image/top-product.png" style="width: 100%; max-width: 375px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="preview flex item-center wrapable">
+                            <div class="info">
+                                <h1 style="font-size: 5em">Smart Watches</h1>
+                                <div>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.</div>
+                                <center><div class="big_btn">Contact us</div></center>
+                            </div>
+                            <div class="clock">
+                                <img src="image/top-product.png" style="width: 100%; max-width: 375px;" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clock">
-                    <img src="image/top-product.png" style="width: 100%; max-width: 375px;" />
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="head-label">
+            <center><h1>Latest Watches</h1></center>
+        </div>
+        <div id="show">
+        </div>
+        <div class="head-label">
+            <center><div class="big_btn"><a href="./watch.html">View All</a></div></center>
+        </div>
+        <div style="height: 30px"></div>
+
+        <div class="about flex item-center wrapable">
+            <div class="clock">
+                <img src="image/about-img.png" style="width: 100%; max-width: 375px;" />
+            </div>
+            <div class="info">
+                <div style="font-size: 5em">About Us</div>
+                <div>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</div>
+                <div><div class="big_btn">Read more</div></div>
+            </div>
+        </div>
+
+        <!-- Features of Our Watches -->
+
+        <div class="features-box">
+            <div class="features-container">
+                <div class="heading_features-container">
+                    <h2>Features Of Our Watches</h2>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                </div>
+                <div class="row-center wrapable">
+                    <div class="products flex wrapable">
+                        <div class="product">
+                            <img src="./image/f1.png" alt="Fitness Tracking">
+                            <h3>Fitness Tracking</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                        <div class="product">
+                            <img src="./image/f2.png" alt="Alerts & Notifications">
+                            <h3>Alerts & Notifications</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                        <div class="product">
+                            <img src="./image/f3.png" alt="Messages">
+                            <h3>Messages</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                        <div class="product">
+                            <img src="./image/f4.png" alt="Bluetooth">
+                            <h3>Bluetooth</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Read More &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bnt-box">
+                    <a href="">View More</a>
                 </div>
             </div>
-            <div class="head-label">
-                <center><h1>Latest Watches</h1></center>
-            </div>
-            <div id="show">
-            </div>
-            <div class="head-label">
-                <center><div class="big_btn"><a href="./watch.html">View All</a></div></center>
-            </div>
-            <div style="height: 30px"></div>
+        </div>
 
-            <div class="about flex item-center wrapable">
-                <div class="clock">
-                    <img src="image/about-img.png" style="width: 100%; max-width: 375px;" />
+        <!--testimonial-container-->
+        <div class="testimonial">
+            <div class="testimonal-container">
+                <h2>Testimonial</h2>
+                <div class="testimonal-customer wrapable">
+                    <div class="customer-1">
+                        <div class="customer-img">
+                            <img src="./image/customer1.jpg" alt="">
+                        </div>
+                        <div class="customer-name">ALINA HANS</div>
+                        <div class="customer">CUSTOMER</div>
+                        <div class="quote-left">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aliquam exercitationem voluptas quod, hic excepturi magni repellendus, pariatur consectetur maiores ipsum ab fugiat delectus dolorem omnis tempora magnam illo accusantium?</div>
+                    </div>
+                    <div class="customer-1">
+                        <div class="customer-img">
+                            <img src="./image/customer2.jpg" alt="">
+                        </div>
+                        <div class="customer-name">ALINA HANS</div>
+                        <div class="customer">CUSTOMER</div>
+                        <div class="quote-left">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aliquam exercitationem voluptas quod, hic excepturi magni repellendus, pariatur consectetur maiores ipsum ab fugiat delectus dolorem omnis tempora magnam illo accusantium?</div>
+                    </div>
                 </div>
-                <div class="info">
-                    <div style="font-size: 5em">About Us</div>
-                    <div>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</div>
-                    <div><div class="big_btn">Read more</div></div>
+                <div class="testimonial-bnt">
+                    <button class="bnt-left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="bnt-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
-			</div>
 
-			<!-- Features of Our Watches -->
+            </div>
+        </div>
 
-			<div class="features-box">
-				<div class="features-container">
-					<div class="heading_features-container">
-						<h2>Features Of Our Watches</h2>
-						<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <!--Footer-container-->
+    <div id="footer"></div>
 
-					</div>
-					<div class="row-center wrapable">
-						<div class="products flex wrapable">
-							<div class="product">
-							  <img src="./image/f1.png" alt="Fitness Tracking">
-							  <h3>Fitness Tracking</h3>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							  <a href="#">Read More &rarr;</a>
-							</div>
-							<div class="product">
-							  <img src="./image/f2.png" alt="Alerts & Notifications">
-							  <h3>Alerts & Notifications</h3>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							  <a href="#">Read More &rarr;</a>
-							</div>
-							<div class="product">
-							  <img src="./image/f3.png" alt="Messages">
-							  <h3>Messages</h3>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							  <a href="#">Read More &rarr;</a>
-							</div>
-							<div class="product">
-							  <img src="./image/f4.png" alt="Bluetooth">
-							  <h3>Bluetooth</h3>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							  <a href="#">Read More &rarr;</a>
-							</div>
-						</div>
-						  
-					</div>
-					<div class="bnt-box">
-						<a href="">View More</a>
-					</div>
-				</div>
-			</div>
+    <script src="./js/loader.js"></script>
 
-			<!--testimonial-container-->
-			<div class="testimonial">
-				<div class="testimonal-container">
-					<h2>Testimonial</h2>
-					<div class="testimonal-customer wrapable">
-						<div class="customer-1">
-							<div class="customer-img">
-								<img src="./image/customer1.jpg" alt="">
-							</div>
-							<div class="customer-name">ALINA HANS</div>
-							<div class="customer">CUSTOMER</div>
-							<div class="quote-left">
-								<i class="fa-solid fa-quote-left"></i>
-							</div>
-							<div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aliquam exercitationem voluptas quod, hic excepturi magni repellendus, pariatur consectetur maiores ipsum ab fugiat delectus dolorem omnis tempora magnam illo accusantium?</div>
-						</div>
-						<div class="customer-1">
-							<div class="customer-img">
-								<img src="./image/customer2.jpg" alt="">
-							</div>
-							<div class="customer-name">ALINA HANS</div>
-							<div class="customer">CUSTOMER</div>
-							<div class="quote-left">
-								<i class="fa-solid fa-quote-left"></i>
-							</div>
-							<div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aliquam exercitationem voluptas quod, hic excepturi magni repellendus, pariatur consectetur maiores ipsum ab fugiat delectus dolorem omnis tempora magnam illo accusantium?</div>
-						</div>
-					</div>
-					<div class="testimonial-bnt">
-						<button class="bnt-left">
-							<i class="fa-solid fa-angle-left"></i>
-						</button>
-						<button class="bnt-right">
-							<i class="fa-solid fa-angle-right"></i>
-						</button>
-					</div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-				</div>
-			</div>
-			
-	    </div>
-		<!--Footer-container-->
-		<div id="footer"></div>
-		
-		<script src="./js/loader.js"></script>
-	</body>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            auto:true
+        });
+    </script>
+</body>
 </html>
