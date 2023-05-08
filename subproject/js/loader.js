@@ -1,4 +1,5 @@
 document.getElementById("header").innerHTML=`
+		<div id="modal"></div>
         <div class="flex header item-center wrapable">
 			<div class="logo">
 				<img src="./image/logo.jpg"/>
@@ -12,7 +13,7 @@ document.getElementById("header").innerHTML=`
                 </div>
 			</div>
 			<div class="flex wrapable float-right option" style="width: 20%;">
-					<div><img src="./image/user.png" /></div>
+					<div data-toggle="modal" data-target="#login-register"><img src="./image/user.png" /></div>
 					<div><img src="./image/shop.png" /></div>
 					<div><img src="./image/settings.png" /></div>
 			</div>
@@ -72,6 +73,123 @@ document.getElementById("footer").innerHTML=`
 
 		</div>
 `;
+
+document.getElementById("modal").innerHTML = `<div class="modal fade" id="login-register">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <ul class="nav nav-pills nav-justified mb-4" id="myTab" role="tablist">
+                            <li class="nav-item">
+                            <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                                <form action="">
+                                    <div class="text-center mt-2 mb-2">
+                                        <p>Connect with:</p>
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </button>
+                                
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-google"></i>
+                                        </button>
+                                
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-twitter"></i>
+                                        </button>
+                                        
+                                    </div>
+
+                                    <p class="text-center">or:</p>
+
+                                    <div class="form-group form-outline">
+                                        <label for="">Email or username:</label>
+                                        <input type="text" name="loginName" id="loginName" class="form-control" placeholder="Email or username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Password:</label>
+                                        <input type="password" name="txt_name" id="txt_name" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-md-6 d-flex justify-content-center">
+                                          <!-- Checkbox -->
+                                          <div class="form-check mb-3 mb-md-0">
+                                            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                            <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-6 d-flex justify-content-center">
+                                          <!-- Simple link -->
+                                          <a href="#!">Forgot password?</a>
+                                        </div>
+                                      </div>
+                                    <button class="btn btn-primary btn-block">Log in</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                <form action="">
+                                    <div class="text-center mt-2 mb-2">
+                                        <p>Connect with:</p>
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </button>
+                                
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-google"></i>
+                                        </button>
+                                
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                          <i class="fab fa-twitter"></i>
+                                        </button>
+                                        
+                                    </div>
+
+                                    <p class="text-center">or:</p>
+
+                                    <div class="form-group">
+                                        <label for="">Name:</label>
+                                        <input type="text" name="txt_name" id="txt_name" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Username:</label>
+                                        <input type="text" name="txt_username" id="txt_username" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email:</label>
+                                        <input type="email" name="txt_email" id="txt_email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Password:</label>
+                                        <input type="password" name="txt_password" id="txt_password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label for="">Repeat password:</label>
+                                        <input type="password" name="txt_repeat-password" id="txt_repeat-password" class="form-control" placeholder="Repeat password">
+                                    </div>
+                                    <div class="form-check text-center mb-3">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" />
+                                        <label class="form-check-label" for="registerCheck">
+                                          I have read and agree to the terms
+                                        </label>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-block">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>`;
 
 
 function getRandomInt(max) {
