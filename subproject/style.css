@@ -432,6 +432,7 @@ a.menu {
 }
 		a.menu:hover {
 			color: red!important;
+            text-decoration: none;
 		}
 
 		.logo {
