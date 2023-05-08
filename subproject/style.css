@@ -484,10 +484,18 @@ a.menu {
     display: grid;
     grid-template-areas:
         "a a b c"
-        "d e f g";
+        "d e f g"
+		"h i k l";
     grid-gap: 10px;
 			padding: 10px 50px;
 			
+}
+
+.grid-container-2 {
+    grid-template-areas:
+        "a b c d"
+        "e f g h"
+		"i k l m";
 }
 
     .grid-container > div {
@@ -497,7 +505,7 @@ a.menu {
         border-radius: 10px;
         height: 290px;
         padding: 20px 0;
-				position: relative;
+		position: relative;
     }
 
         .grid-container > div.a {
@@ -521,14 +529,37 @@ a.menu {
         .grid-container > div.g {
             grid-area: g;
         }
+        .grid-container > div.h {
+            grid-area: h;
+        }
+        .grid-container > div.i {
+            grid-area: i;
+        }
+        .grid-container > div.k {
+            grid-area: k;
+        }
+        .grid-container > div.l {
+            grid-area: l;
+        }
+        .grid-container > div.m {
+            grid-area: m;
+        }
 
 .head-label {
 			padding: 30px 0 30px 0;
 }
 
+.wimage {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 .wimage > img {
     max-width: 100%;
     max-height: 175px;
+	display: block;
 }
 
 		.winfo {
