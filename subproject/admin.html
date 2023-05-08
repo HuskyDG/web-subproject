@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)./index.html -->
+<html lang="en"><plasmo-csui id="merlinExt-merlinGUI"></plasmo-csui><plasmo-csui id="merlinExt-selectContextBtn"></plasmo-csui><merlin-component id="merlin-text-summarizer" class="merlin text-summarizer"></merlin-component><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="./">--><base href=".">
+	<style>
+	.chart {background-color:black;}
+	</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Admin">
+    <title>ADMIN WEBMASTER</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="./ext/simplebar.css">
+    <link rel="stylesheet" href="./ext/simplebar(1).css">
+    <!-- Main styles for this application-->
+    <link href="./ext/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="./ext/prism.css">
+    <link href="./ext/examples.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./ext/js"></script><script src="./ext/667090843876081" async=""></script><script src="./ext/identity.js.download" async=""></script><script type="text/javascript" async="" src="./ext/fbevents.js.download"></script><script type="text/javascript" async="" src="./ext/analytics.js.download"></script><script async="" src="./ext/gtm.js.download"></script><script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KX4JH47');
+    </script>
+    <link href="./ext/coreui-chartjs.css" rel="stylesheet">
+  <style type="text/css">.vue-slider-dot{position:absolute;-webkit-transition:all 0s;transition:all 0s;z-index:5}.vue-slider-dot:focus{outline:none}.vue-slider-dot-tooltip{position:absolute;visibility:hidden}.vue-slider-dot-hover:hover .vue-slider-dot-tooltip,.vue-slider-dot-tooltip-show{visibility:visible}.vue-slider-dot-tooltip-top{top:-10px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-dot-tooltip-bottom{bottom:-10px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-dot-tooltip-left{left:-10px;top:50%;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-dot-tooltip-right{right:-10px;top:50%;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}</style><style type="text/css">.vue-slider-marks{position:relative;width:100%;height:100%}.vue-slider-mark{position:absolute;z-index:1}.vue-slider-ltr .vue-slider-mark,.vue-slider-rtl .vue-slider-mark{width:0;height:100%;top:50%}.vue-slider-ltr .vue-slider-mark-step,.vue-slider-rtl .vue-slider-mark-step{top:0}.vue-slider-ltr .vue-slider-mark-label,.vue-slider-rtl .vue-slider-mark-label{top:100%;margin-top:10px}.vue-slider-ltr .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ltr .vue-slider-mark-step{left:0}.vue-slider-ltr .vue-slider-mark-label{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.vue-slider-rtl .vue-slider-mark{-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%)}.vue-slider-rtl .vue-slider-mark-step{right:0}.vue-slider-rtl .vue-slider-mark-label{right:50%;-webkit-transform:translateX(50%);transform:translateX(50%)}.vue-slider-btt .vue-slider-mark,.vue-slider-ttb .vue-slider-mark{width:100%;height:0;left:50%}.vue-slider-btt .vue-slider-mark-step,.vue-slider-ttb .vue-slider-mark-step{left:0}.vue-slider-btt .vue-slider-mark-label,.vue-slider-ttb .vue-slider-mark-label{left:100%;margin-left:10px}.vue-slider-btt .vue-slider-mark{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.vue-slider-btt .vue-slider-mark-step{top:0}.vue-slider-btt .vue-slider-mark-label{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-ttb .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ttb .vue-slider-mark-step{bottom:0}.vue-slider-ttb .vue-slider-mark-label{bottom:50%;-webkit-transform:translateY(50%);transform:translateY(50%)}.vue-slider-mark-label,.vue-slider-mark-step{position:absolute}</style><style type="text/css">.vue-slider{position:relative;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;-webkit-tap-highlight-color:rgba(0,0,0,0)}.vue-slider-rail{position:relative;width:100%;height:100%;-webkit-transition-property:width,height,left,right,top,bottom;transition-property:width,height,left,right,top,bottom}.vue-slider-process{position:absolute;z-index:1}</style><style>@import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/content/styles.css");</style></head>
+  <body><plasmo-csui id="merlinExt-merlinGUI"></plasmo-csui><plasmo-csui id="merlinExt-selectContextBtn"></plasmo-csui><merlin-component id="merlin-text-summarizer" class="merlin text-summarizer"></merlin-component><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="./">--><base href=".">
+	<style>
+	.chart {background-color:black;}
+	</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Admin">
+    <title>ADMIN WEBMASTER</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="./ext/simplebar.css">
+    <link rel="stylesheet" href="./ext/simplebar(1).css">
+    <!-- Main styles for this application-->
+    <link href="./ext/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="./ext/prism.css">
+    <link href="./ext/examples.css" rel="stylesheet">
+    <script src="https://connect.facebook.net/signals/config/667090843876081?v=2.9.104&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/plugins/identity.js?v=2.9.104" async=""></script><script type="text/javascript" async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KX4JH47"></script><script type="text/javascript" async="" src="./ext/js"></script><script src="./ext/667090843876081" async=""></script><script src="./ext/identity.js.download" async=""></script><script type="text/javascript" async="" src="./ext/fbevents.js.download"></script><script type="text/javascript" async="" src="./ext/analytics.js.download"></script><script async="" src="./ext/gtm.js.download"></script><script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KX4JH47');
+    </script>
+    <link href="./ext/coreui-chartjs.css" rel="stylesheet">
+  <style type="text/css">.vue-slider-dot{position:absolute;-webkit-transition:all 0s;transition:all 0s;z-index:5}.vue-slider-dot:focus{outline:none}.vue-slider-dot-tooltip{position:absolute;visibility:hidden}.vue-slider-dot-hover:hover .vue-slider-dot-tooltip,.vue-slider-dot-tooltip-show{visibility:visible}.vue-slider-dot-tooltip-top{top:-10px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-dot-tooltip-bottom{bottom:-10px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-dot-tooltip-left{left:-10px;top:50%;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-dot-tooltip-right{right:-10px;top:50%;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}</style><style type="text/css">.vue-slider-marks{position:relative;width:100%;height:100%}.vue-slider-mark{position:absolute;z-index:1}.vue-slider-ltr .vue-slider-mark,.vue-slider-rtl .vue-slider-mark{width:0;height:100%;top:50%}.vue-slider-ltr .vue-slider-mark-step,.vue-slider-rtl .vue-slider-mark-step{top:0}.vue-slider-ltr .vue-slider-mark-label,.vue-slider-rtl .vue-slider-mark-label{top:100%;margin-top:10px}.vue-slider-ltr .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ltr .vue-slider-mark-step{left:0}.vue-slider-ltr .vue-slider-mark-label{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.vue-slider-rtl .vue-slider-mark{-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%)}.vue-slider-rtl .vue-slider-mark-step{right:0}.vue-slider-rtl .vue-slider-mark-label{right:50%;-webkit-transform:translateX(50%);transform:translateX(50%)}.vue-slider-btt .vue-slider-mark,.vue-slider-ttb .vue-slider-mark{width:100%;height:0;left:50%}.vue-slider-btt .vue-slider-mark-step,.vue-slider-ttb .vue-slider-mark-step{left:0}.vue-slider-btt .vue-slider-mark-label,.vue-slider-ttb .vue-slider-mark-label{left:100%;margin-left:10px}.vue-slider-btt .vue-slider-mark{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.vue-slider-btt .vue-slider-mark-step{top:0}.vue-slider-btt .vue-slider-mark-label{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-ttb .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ttb .vue-slider-mark-step{bottom:0}.vue-slider-ttb .vue-slider-mark-label{bottom:50%;-webkit-transform:translateY(50%);transform:translateY(50%)}.vue-slider-mark-label,.vue-slider-mark-step{position:absolute}</style><style type="text/css">.vue-slider{position:relative;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;-webkit-tap-highlight-color:rgba(0,0,0,0)}.vue-slider-rail{position:relative;width:100%;height:100%;-webkit-transition-property:width,height,left,right,top,bottom;transition-property:width,height,left,right,top,bottom}.vue-slider-process{position:absolute;z-index:1}</style><style>@import url("chrome-extension://adlpodnneegcnbophopdmhedicjbcgco/content/styles.css");</style>
+  
+    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
+      <div class="sidebar-brand d-none d-md-flex">
+        <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#full"></use>
+        </svg>
+        <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#signet"></use>
+        </svg>
+      </div>
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
+        <li class="nav-item"><a class="nav-link active" href="./index.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
+            </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        <li class="nav-title">Theme</li>
+        <li class="nav-item"><a class="nav-link" href="./colors.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
+            </svg>Chủ đề</a></li>
+        <li class="nav-item"><a class="nav-link" href="./typography.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
+            </svg>Kiểu chữ</a></li>
+        <li class="nav-title">Thành phần trang</li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+            </svg>Cơ bản</a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="./base/accordion.html"><span class="nav-icon"></span> Accordion</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/breadcrumb.html"><span class="nav-icon"></span> Breadcrumb</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/cards.html"><span class="nav-icon"></span> Cards</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/carousel.html"><span class="nav-icon"></span> Carousel</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/collapse.html"><span class="nav-icon"></span> Collapse</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/list-group.html"><span class="nav-icon"></span> List group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/navs-tabs.html"><span class="nav-icon"></span> Navs &amp; Tabs</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/pagination.html"><span class="nav-icon"></span> Pagination</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/placeholders.html"><span class="nav-icon"></span> Placeholders</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/popovers.html"><span class="nav-icon"></span> Popovers</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/progress.html"><span class="nav-icon"></span> Progress</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/scrollspy.html"><span class="nav-icon"></span> Scrollspy</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/spinners.html"><span class="nav-icon"></span> Spinners</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/tables.html"><span class="nav-icon"></span> Tables</a></li>
+            <li class="nav-item"><a class="nav-link" href="./base/tooltips.html"><span class="nav-icon"></span> Tooltips</a></li>
+          </ul>
+        </li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
+            </svg>Nút bấm</a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="./buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons/button-group.html"><span class="nav-icon"></span> Buttons Group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./charts.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+            </svg>Biểu đồ</a></li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-notes"></use>
+            </svg>Khung mẫu</a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="./forms/form-control.html"> Form Control</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/select.html"> Select</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/checks-radios.html"> Checks and radios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/range.html"> Range</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/input-group.html"> Input group</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/floating-labels.html"> Floating labels</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/layout.html"> Layout</a></li>
+            <li class="nav-item"><a class="nav-link" href="./forms/validation.html"> Validation</a></li>
+          </ul>
+        </li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+            </svg>Biểu tượng</a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="./icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="./icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="./icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
+          </ul>
+        </li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+            </svg>Thông báo</a>
+          <ul class="nav-group-items">
+            <li class="nav-item"><a class="nav-link" href="./notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
+            <li class="nav-item"><a class="nav-link" href="./notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
+            <li class="nav-item"><a class="nav-link" href="./notifications/modals.html"><span class="nav-icon"></span> Modals</a></li>
+            <li class="nav-item"><a class="nav-link" href="./notifications/toasts.html"><span class="nav-icon"></span> Toasts</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./widgets.html">
+            <svg class="nav-icon">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calculator"></use>
+            </svg>Phụ kiện<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        <li class="nav-divider"></li>
+        
+        
+      </div></div></div></div><div class="simplebar-placeholder" style="width: 256px; height: 841px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar simplebar-visible" style="height: 394px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></ul>
+    </div>
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+      <header class="header header-sticky mb-4">
+        <div class="container-fluid">
+          <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+            <svg class="icon icon-lg">
+              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+            </svg>
+          </button><a class="header-brand d-md-none">
+            <svg width="118" height="46" alt="CoreUI Logo">
+              <use xlink:href="assets/brand/coreui.svg#full"></use>
+            </svg></a>
+          <ul class="header-nav d-none d-md-flex">
+            <li class="nav-item"><a class="nav-link">Bảng điều khiển</a></li>
+            <li class="nav-item"><a class="nav-link">Người dùng</a></li>
+            <li class="nav-item"><a class="nav-link">Thiết lập</a></li>
+          </ul>
+          <ul class="header-nav ms-auto">
+            <li class="nav-item"><a class="nav-link">
+                <svg class="icon icon-lg">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                </svg></a></li>
+            <li class="nav-item"><a class="nav-link">
+                <svg class="icon icon-lg">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
+                </svg></a></li>
+            <li class="nav-item"><a class="nav-link">
+                <svg class="icon icon-lg">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                </svg></a></li>
+          </ul>
+          <ul class="header-nav ms-3">
+            <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-md"><img class="avatar-img" src="./image/8.webp" alt="user@email.com"></div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end pt-0">
+                <div class="dropdown-header bg-light py-2">
+                  <div class="fw-semibold">Account</div>
+                </div><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                  </svg> Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                  </svg> Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-task"></use>
+                  </svg> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
+                  </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
+                <div class="dropdown-header bg-light py-2">
+                  <div class="fw-semibold">Settings</div>
+                </div><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                  </svg> Profile</a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                  </svg> Settings</a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
+                  </svg> Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
+                  </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
+                <div class="dropdown-divider"></div><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                  </svg> Lock Account</a><a class="dropdown-item">
+                  <svg class="icon me-2">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  </svg> Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header-divider"></div>
+        <div class="container-fluid">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-0 ms-2">
+              <li class="breadcrumb-item">
+                <!-- if breadcrumb is single--><span>Trang chủ</span>
+              </li>
+              <li class="breadcrumb-item active"><span>Bảng điều khiển</span></li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+      <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-black bg-white">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">26K <span class="fs-6 fw-normal">(-12.4%
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-bottom"></use>
+                        </svg>)</span></div>
+                    <div>Khách hàng</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Action</a><a class="dropdown-item">Another action</a><a class="dropdown-item">Something else here</a></div>
+                  </div>
+                </div>
+                <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart1" height="140" width="380" style="display: block; box-sizing: border-box; height: 70px; width: 190px; background-color: gray;"></canvas>
+                <div class="chartjs-tooltip" style="opacity: 0; left: 140.8px; top: 101.797px;"><table style="margin: 0px;"><thead class="chartjs-tooltip-header"><tr class="chartjs-tooltip-header-item" style="border-width: 0px;"><th style="border-width: 0px;">April</th></tr></thead><tbody class="chartjs-tooltip-body"><tr class="chartjs-tooltip-body-item"><td style="border-width: 0px;"><span style="background: rgb(50, 31, 219); border-color: rgba(255, 255, 255, 0.55); border-width: 2px; margin-right: 10px; height: 10px; width: 10px; display: inline-block;"></span>My First dataset: 84</td></tr></tbody></table></div></div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-black bg-white">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">$6.200 <span class="fs-6 fw-normal">(40.9%
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-top"></use>
+                        </svg>)</span></div>
+                    <div>Doanh thu</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Action</a><a class="dropdown-item">Another action</a><a class="dropdown-item">Something else here</a></div>
+                  </div>
+                </div>
+                <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart2" height="140" width="380" style="display: block; box-sizing: border-box; height: 70px; width: 190px; background-color: gray;"></canvas>
+                <div class="chartjs-tooltip" style="opacity: 0; left: 220.667px; top: 115.046px;"><table style="margin: 0px;"><thead class="chartjs-tooltip-header"><tr class="chartjs-tooltip-header-item" style="border-width: 0px;"><th style="border-width: 0px;">Jane</th></tr></thead><tbody class="chartjs-tooltip-body"><tr class="chartjs-tooltip-body-item"><td style="border-width: 0px;"><span style="background: rgb(51, 153, 255); border-color: rgba(255, 255, 255, 0.55); border-width: 2px; margin-right: 10px; height: 10px; width: 10px; display: inline-block;"></span>My First dataset: 22</td></tr></tbody></table></div></div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-black bg-white">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">2.49% <span class="fs-6 fw-normal">(84.7%
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-top"></use>
+                        </svg>)</span></div>
+                    <div>Mức độ mua</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Action</a><a class="dropdown-item">Another action</a><a class="dropdown-item">Something else here</a></div>
+                  </div>
+                </div>
+                <div class="c-chart-wrapper mt-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart3" height="140" width="444" style="display: block; box-sizing: border-box; height: 70px; width: 222px; background-color: gray;"></canvas>
+                <div class="chartjs-tooltip" style="opacity: 0; left: 1px; top: 107.872px;"><table style="margin: 0px;"><thead class="chartjs-tooltip-header"><tr class="chartjs-tooltip-header-item" style="border-width: 0px;"><th style="border-width: 0px;">January</th></tr></thead><tbody class="chartjs-tooltip-body"><tr class="chartjs-tooltip-body-item"><td style="border-width: 0px;"><span style="background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.55); border-width: 2px; margin-right: 10px; height: 10px; width: 10px; display: inline-block;"></span>My First dataset: 78</td></tr></tbody></table></div></div>
+              </div>
+            </div>
+            <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-black bg-white">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold">44K <span class="fs-6 fw-normal">(-23.6%
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-bottom"></use>
+                        </svg>)</span></div>
+                    <div>Phiên đăng nhập</div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <svg class="icon">
+                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Action</a><a class="dropdown-item">Another action</a><a class="dropdown-item">Something else here</a></div>
+                  </div>
+                </div>
+                <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart4" height="140" width="380" style="display: block; box-sizing: border-box; height: 70px; width: 190px; background-color: gray;"></canvas>
+                <div class="chartjs-tooltip" style="opacity: 0; left: 117.4px; top: 131.76px;"><table style="margin: 0px;"><thead class="chartjs-tooltip-header"><tr class="chartjs-tooltip-header-item" style="border-width: 0px;"><th style="border-width: 0px;">Feby</th></tr></thead><tbody class="chartjs-tooltip-body"><tr class="chartjs-tooltip-body-item"><td style="border-width: 0px;"><span style="background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.55); border-width: 2px; margin-right: 10px; height: 10px; width: 10px; display: inline-block;"></span>My First dataset: 40</td></tr></tbody></table></div></div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h4 class="card-title mb-0">Lưu lượng truy cập</h4>
+                  <div class="small text-medium-emphasis">Tháng 1 - Tháng 7 2023</div>
+                </div>
+                <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
+                  <div class="btn-group btn-group-toggle mx-3" data-coreui-toggle="buttons">
+                    <input class="btn-check" id="option1" type="radio" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary">Ngày</label>
+                    <input class="btn-check" id="option2" type="radio" name="options" autocomplete="off" checked="">
+                    <label class="btn btn-outline-secondary active">Tháng</label>
+                    <input class="btn-check" id="option3" type="radio" name="options" autocomplete="off">
+                    <label class="btn btn-outline-secondary">Năm</label>
+                  </div>
+                  <button class="btn btn-primary" type="button">
+                    <svg class="icon">
+                      <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cloud-download"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="c-chart-wrapper" style="height:300px;margin-top:40px;">
+                <canvas class="chart" id="main-chart" height="600" width="1868" style="display: block; box-sizing: border-box; height: 300px; width: 934px;"></canvas>
+              <div class="chartjs-tooltip" style="opacity: 0;"><table style="margin: 0px;"></table></div></div>
+            </div>
+            <div class="card-footer">
+              <div class="row row-cols-1 row-cols-md-5 text-center">
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">Lượt truy cập</div>
+                  <div class="fw-semibold">29.703 Users (40%)</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">Khách quen</div>
+                  <div class="fw-semibold">24.093 Users (20%)</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">Lượt xem</div>
+                  <div class="fw-semibold">78.706 Views (60%)</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">Khách hàng mới</div>
+                  <div class="fw-semibold">22.123 Users (80%)</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">Tỷ lệ truy cập</div>
+                  <div class="fw-semibold">40.15%</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-4">
+                
+                <div class="card-body">
+                  
+                  <!-- /.row--><br>
+                  <div class="table-responsive">
+                    <table class="table border mb-0">
+                      <thead class="table-light fw-semibold">
+                        <tr class="align-middle">
+                          <th class="text-center">
+                            <svg class="icon">
+                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-people"></use>
+                            </svg>
+                          </th>
+                          <th>Khách hàng</th>
+                          <th class="text-center">Quốc gia</th>
+                          <th>Thông tin truy cập</th>
+                          <th class="text-center">Phương thức thanh toán</th>
+                          <th>Hoạt động</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="./image/1.webp" alt="user@email.com"><span class="avatar-status bg-success"></span></div>
+                          </td>
+                          <td>
+                            <div>Yiorgos Avraamu</div>
+                            <div class="small text-medium-emphasis"><span>New</span> | Đăng ký: Jan 1, 2023</div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-us"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold">50%</div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Jan 11, 2023 - Feb 10, 2023</small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-cc-mastercard"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="small text-medium-emphasis">Lần truy cập cuối</div>
+                            <div class="fw-semibold">10 giờ trước</div>
+                          </td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Info</a><a class="dropdown-item">Edit</a><a class="dropdown-item text-danger">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="./image/2.webp" alt="user@email.com"><span class="avatar-status bg-danger"></span></div>
+                          </td>
+                          <td>
+                            <div>Avram Tarasios</div>
+                            <div class="small text-medium-emphasis"><span>Recurring</span> | Đăng ký: Jan 1, 2023</div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-br"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold">10%</div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Jan 11, 2023 - Feb 10, 2023</small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-cc-visa"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="small text-medium-emphasis">Lần truy cập cuối</div>
+                            <div class="fw-semibold">5 phút trước</div>
+                          </td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Info</a><a class="dropdown-item">Edit</a><a class="dropdown-item text-danger">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="./image/3.webp" alt="user@email.com"><span class="avatar-status bg-warning"></span></div>
+                          </td>
+                          <td>
+                            <div>Quintin Ed</div>
+                            <div class="small text-medium-emphasis"><span>New</span> | Đăng ký: Jan 1, 2023</div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-in"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold">74%</div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Jan 11, 2023 - Feb 10, 2023</small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-cc-stripe"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="small text-medium-emphasis">Lần truy cập cuối</div>
+                            <div class="fw-semibold">1 giờ trước</div>
+                          </td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Info</a><a class="dropdown-item">Edit</a><a class="dropdown-item text-danger">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="./image/4.webp" alt="user@email.com"><span class="avatar-status bg-secondary"></span></div>
+                          </td>
+                          <td>
+                            <div>Enéas Kwadwo</div>
+                            <div class="small text-medium-emphasis"><span>New</span> | Đăng ký: Jan 1, 2023</div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-fr"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold">98%</div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Jan 11, 2023 - Feb 10, 2023</small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-cc-paypal"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="small text-medium-emphasis">Lần truy cập cuối</div>
+                            <div class="fw-semibold">1 tháng trước</div>
+                          </td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Info</a><a class="dropdown-item">Edit</a><a class="dropdown-item text-danger">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="./image/5.webp" alt="user@email.com"><span class="avatar-status bg-success"></span></div>
+                          </td>
+                          <td>
+                            <div>Agapetus Tadeáš</div>
+                            <div class="small text-medium-emphasis"><span>New</span> | Đăng ký: Jan 1, 2023</div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-es"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold">22%</div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Jan 11, 2023 - Feb 10, 2023</small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-cc-apple-pay"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="small text-medium-emphasis">Lần truy cập cuối</div>
+                            <div class="fw-semibold">Last week</div>
+                          </td>
+                          <td>
+                            <div class="dropdown dropup">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Info</a><a class="dropdown-item">Edit</a><a class="dropdown-item text-danger">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="./image/6.webp" alt="user@email.com"><span class="avatar-status bg-danger"></span></div>
+                          </td>
+                          <td>
+                            <div>Friderik Dávid</div>
+                            <div class="small text-medium-emphasis"><span>New</span> | Đăng ký: Jan 1, 2023</div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-pl"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold">43%</div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Jan 11, 2023 - Feb 10, 2023</small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-cc-amex"></use>
+                            </svg>
+                          </td>
+                          <td>
+                            <div class="small text-medium-emphasis">Lần truy cập cuối</div>
+                            <div class="fw-semibold">Yesterday</div>
+                          </td>
+                          <td>
+                            <div class="dropdown dropup">
+                              <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon">
+                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item">Info</a><a class="dropdown-item">Edit</a><a class="dropdown-item text-danger">Delete</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+          </div>
+          <!-- /.row-->
+        </div>
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="./ext/coreui.bundle.min.js.download"></script>
+    <script src="./ext/simplebar.min.js.download"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="./ext/chart.min.js.download"></script>
+    <script src="./ext/coreui-chartjs.js.download"></script>
+    <script src="./ext/coreui-utils.js.download"></script>
+    <script src="./ext/main.js.download"></script>
+    <script>
+    </script>
+
+  
+
+</body>
+</html>
