@@ -1,0 +1,173 @@
+<html>
+
+<head>
+</head>
+
+<style>
+    body {
+        margin: auto;
+        max-width: 1024px;
+    }
+    
+    td {
+        border: solid black 1px;
+        padding: 0;
+    }
+</style>
+
+<body>
+
+
+
+    <form id="form">
+        <div>
+            <label for="fileUpload"> Upload image</label>
+            <br>
+            <input type="file" id="fileUpload" />
+        </div>
+        <div id="img"></div>
+        <div>
+            <label for="post"> Name:</label>
+            <br>
+            <textarea name="post" id="input" cols="30" rows="10"></textarea>
+        </div>
+        <div id="msg"></div>
+        <button type="submit">Post</button>
+    </form>
+    <div class="right">
+        <h3>Your posts here</h3>
+        <table style="width: 100%" id="mytb">
+            <tr>
+                <td>Image</td>
+                <td>Name</td>
+                <td>*</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script type="text/javascript">
+        var $ = document;
+        var form = $.getElementById('form');
+        var input = $.getElementById('input');
+        var msg = $.getElementById('msg');
+        var posts = $.getElementById('mytb');
+        const image_input = document.querySelector("#fileUpload");
+        var uploaded_image = "";
+		var base64_image = "";
+		var url = "https://6459a38c95624ceb21ec7647.mockapi.io/api/2k3/APP"
+		var last_id = 0;
+		
+		const getBase64StringFromDataURL = (dataURL) => dataURL.replace('data:', '').replace(/^.+,/, '');
+
+        image_input.addEventListener("change", function(event) {
+            const file_reader = new FileReader;
+            console.log("change");
+            file_reader.addEventListener("load", () => {
+                uploaded_image = file_reader.result;
+                document.querySelector("#img").innerHTML = `<img src = "${uploaded_image}"/>`;
+				base64_image = getBase64StringFromDataURL(uploaded_image);
+            })
+            file_reader.readAsDataURL(this.files[0]);
+        })
+
+
+        let data = {};
+
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            console.log("button clicked")
+            formValidation();
+        });
+		
+		function insertTable(a, b, id) {
+		    var row = b.insertRow(-1);
+					var cell = [];
+					for (var j = 0; j < 3; j++) {
+					    cell.push(row.insertCell(j));
+					}
+					cell[0].innerHTML = a.name;
+					cell[1].innerHTML = `<img src="data:image/png;base64,` + a.image + `" width="200px"/>`;
+					cell[2].innerHTML = `<button onClick="req_edit(this,${id})">Edit</button> <button onclick="req_delete(${id})">Delete</button>`;
+		
+		}
+		
+		async function postJSON(a, surl, xfunc) {
+			  try {
+				const response = await fetch(surl, {
+				  method: "POST", // or 'PUT'
+				  headers: {
+					"Content-Type": "application/json",
+				  },
+				  body: JSON.stringify(a),
+				});
+
+				const result = await response.json();
+				console.log("Success:", result);
+				xfunc();
+			  } catch (error) {
+				console.error("Error:", error);
+				msg.innerHTML = "Upload failed!";
+			  }
+			}
+		
+		async function send_delete(surl, xfunc) {
+			try {
+				const response = await fetch(surl, {
+				  method: "DELETE"
+				});
+				console.log("Success:", surl);
+				xfunc();
+			  } catch (error) {
+				console.error("Error:", error);
+			  }
+		}
+
+
+        let formValidation = () => {
+            msg.innerHTML = "";
+            if (input.value == "") {
+                msg.innerHTML = "Post is blank!";
+            } else {
+                data["name"] = input.value;
+                data["image"] = base64_image;
+				postJSON(data, url, function() {
+					insertTable(data, posts, ++last_id);
+				});
+				
+            }
+        }
+		
+		
+
+        fetch(url)
+		    .then(res => res.json())
+            .then(function(json) {
+				console.log(json);
+				console.log(json.length);
+                for (var i = 0; i <  json.length; i++) {
+					console.log(json[i]);
+					insertTable(json[i], posts, json[i].id);
+				    last_id = i;
+				}
+            });
+
+        let req_delete = (e) => {
+            send_delete(url + "/" + e, function(){location.reload()});
+        };
+		
+		let req_edit = (x, e) => {
+            send_delete(url + "/" + e, function(){
+				input.value = x.parentElement.parentElement.childNodes[0].innerHTML;
+				b64url = x.parentElement.parentElement.childNodes[1].childNodes[0].src
+				base64_image = getBase64StringFromDataURL(b64url);
+				document.querySelector("#img").innerHTML = `<img src = "${b64url}"/>`;
+				x.parentElement.parentElement.remove();
+			});
+        };
+    </script>
+
+</body>
+
+</html>
