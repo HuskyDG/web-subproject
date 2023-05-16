@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+</head>
+<style>
+    body {
+        max-width: 1024px;
+        margin: auto;
+        font-size: 14px;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .menu {
+        padding: 5px;
+    }
+    
+    .menu>div>.inline-block {
+        padding: 5px 10px;
+    }
+    
+    .inline-block {
+        display: inline-block;
+    }
+    
+    .is_relative {
+        position: relative;
+    }
+    
+    .is_absolute {
+        position: absolute;
+    }
+    
+    .submenu {
+        background-color: white;
+        color: black
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+    
+    .register-box {
+        margin: 0px auto;
+        background-color: white;
+        color: black;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+    }
+    
+    .news-menu {
+        background-color: lightblue;
+        color: darkblue;
+    }
+    
+    .body {
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="col-3"><img src="../img/logo.png" /></div>
+        <div class="col-9 row">
+            <h3>ĐOÀN THANH NIÊN THÀNH PHỐ HỒ CHÍ MINH</h3>
+            <p style="color:red">ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</p>
+        </div>
+    </div>
+    <div class="row menu">
+        <div class="col-5">
+            <div class="inline-block"><a href="#">TRANG CHỦ</a></div>
+            <div class="inline-block"><a href="#">ĐOÀN THỂ</a></div>
+            <div class="inline-block"><a href="#">SỰ KIỆN</a></div>
+            <div class="inline-block is_relative do_active">
+                <div><a href="#">HOẠT ĐỘNG</a></div>
+                <div class="submenu is_absolute" style="width: 100%; z-index: 1; padding: 10px;">
+                    <div class="do_register">ĐĂNG KÍ</div>
+                    <div>THAN GIA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="layer">
+            <div class="register-box">
+                <div class="row-mb2 flex" style="justify-content: center;">
+                    <h3>THÔNG TIN ĐĂNG KÝ</h3>
+                </div>
+                <form method="post" id="form">
+                    <div class="row-mb2">
+                        <div class="col-4 text-left">
+                            <label for="mssv">Mã số sinh viên</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="mssv" id="mssv" class="form-control" placeholder="Mã số sinh viên">
+                        </div>
+                        <div class="col-1">
+                            <font color="red">*</font>
+                        </div>
+                    </div>
+                    <div class="row-mb2">
+                        <div class="col-4 text-left">
+                            <label for="hoten">Họ tên</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="hoten" id="hoten" class="form-control" placeholder="Họ tên">
+                        </div>
+                        <div class="col-1">
+                            <font color="red">*</font>
+                        </div>
+                    </div>
+                    <div class="row-mb2">
+                        <div class="col-4 text-left">
+                            <label for="ngaytg">Ngày tham gia</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="date" name="ngaytg" id="ngaytg" class="form-control">
+                        </div>
+                        <div class="col-1">
+                            <font color="red">*</font>
+                        </div>
+                    </div>
+                    <div class="row-mb2">
+                        <div class="col-4 text-left">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-1">
+                            <font color="red">*</font>
+                        </div>
+                    </div>
+                    <div class="row-mb2">
+                        <div class="col-4 text-left">
+                            <label for="sdt">Số điện thoại</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="number" name="sdt" id="sdt" class="form-control" placeholder="Số điện thoại">
+                        </div>
+                        <div class="col-1">
+                            <font color="red">*</font>
+                        </div>
+                    </div>
+                    <input class="btn-danger col-12" type="submit" id="submit" value="Lưu" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".submenu").hide();
+        $(".do_active").click(function() {
+            $(".submenu").show();
+        });
+        $(".do_active").mouseleave(function() {
+            $(".submenu").hide();
+        });
+        $(".do_register").click(function() {
+            $(".modal").show("slow");
+        });
+        $(".modal").click(function() {
+            var container = $(".register-box")
+            if (!container.is(event.target) &&
+                !container.has(event.target).length)
+                $(".modal").hide("slow");
+        });
+    </script>
+    <div class="row flex body">
+        <div class="col-6"><img src="../img/ngayhoithanhnien.JPG" style="width: 100%; border-radius: 50%;"></div>
+        <div class="col-6">
+            <h3>TIN NỔI BẬT</h3>
+            <div class="news-menu">
+                <ol type="i">
+                    <li>Mùa hè xanh</li>
+                    <li>Mùa hè xanh</li>
+                    <li>Mùa hè xanh</li>
+                    <li>Mùa hè xanh</li>
+                    <li>Mùa hè xanh</li>
+                    <li>Mùa hè xanh</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row-mb2 flex" style="justify-content: center;">
+        <h3>DANH SÁCH ĐĂNG KÍ HOẠT ĐỘNG MÙA HÈ</h3>
+    </div>
+    <div class="register-list">
+        <table id="list" class="table table-info" style="width: 100%;">
+            <th>
+                <td>STT</td>
+                <td>Mã SV</td>
+                <td>Tên SV</td>
+                <td>Ngày tham gia</td>
+                <td>Email</td>
+                <td>Số điện thoại</td>
+            </th>
+
+        </table>
+    </div>
+    <script>
+        var doc = document;
+        var list = doc.getElementById("list");
+        var form = doc.getElementById("form");
+        var mssv = doc.getElementById('mssv').value;
+        var hoten = doc.getElementById("hoten").value;
+        var ngaytg = doc.getElementById("ngaytg").value;
+        var email = doc.getElementById("email").value;
+        var sdt = doc.getElementById("sdt").value;
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            console.log("clicked", mssv);
+            list.innerHTML += `
+            <td>${mssv}</td>
+            <td>${mssv}</td>
+            <td>${mssv}</td>
+            <td>${mssv}</td>
+            <td>${mssv}</td>
+            <td>${mssv}</td>
+            `;
+        })
+    </script>
+
+</body>
+
+</html>
