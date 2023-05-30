@@ -6,7 +6,7 @@ Tên nhóm: 2Cakecup
 
 Thành viên:
 
-- Nguyễn Hoàng Thể Vĩ - 21067171
+- Nguyễn Hoàng Thế Vĩ - 21067171
 
 - Nguyễn Tấn Thiên - 21119761
 
